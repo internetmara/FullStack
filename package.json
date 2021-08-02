@@ -15,6 +15,7 @@
     "webpack": "^5.47.1",
     "webpack-cli": "^4.7.2"
   },
+
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
   "main": "index.js",
@@ -22,13 +23,21 @@
     "lib": "lib",
     "test": "test"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/internetmara/hashmaps.git"
   },
+
+  "engines": {
+    "node": "12.5.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack"
+  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
