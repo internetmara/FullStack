@@ -2,11 +2,9 @@ import React from "react";
 import GreetingContainer from "./greeting/greeting_container";
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
-import { AuthRoute } from '../util/route_util';
-import {
-  Route,
-} from 'react-router-dom';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import home from "./home/home";
+import dispensary_index_container from "./dispensary/dispensary_index_container";
 
 const App = () => (
   <div>
@@ -19,6 +17,7 @@ const App = () => (
     <AuthRoute exact path="/signup" component={SignUpFormContainer} />
     <h4 align="center">Give job now give give!! give!!!</h4>
     <h5 align="center"><i>~ ~ ~ Sativa to change the things I can, and indica to accept the things I cannot. ~ ~ ~</i></h5>
+    <ProtectedRoute path="/dispensaries" component={dispensary_index_container} />
   </div>
 );
 
