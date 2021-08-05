@@ -1,19 +1,17 @@
+import React from 'react';
+import DispensaryIndex from './dispensary_index';
+import { fetchDispensaries } from '../../actions/dispensaries_actions';
 import { connect } from 'react-redux';
 
-import { logout } from '../../actions/session_actions';
-import Dispensary from './dispensary_item';
-
-const mapStateToProps = ({ session, entities: { users } }) => {
-  return {
-    currentUser: users[session.id]
-  };
+const mapStateToProps = (state) => {
+  console.log(state)
+  return ({
+  dispensaries: Object.values(state.entities.dispensaries)
+  })
 };
 
-const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
+const mapDispatchToProps = (dispatch) => ({
+  fetchDispensaries: () => dispatch(fetchDispensaries()),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Dispensary);
+export default connect(mapStateToProps, mapDispatchToProps)(DispensaryIndex);

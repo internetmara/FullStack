@@ -14,6 +14,7 @@ class DispensaryIndex extends React.Component {
     const { dispensaries } = this.props;
     return (
       <div>
+        Hello I am dispensary buy weed frum meh
         <ul>
           {
             dispensaries.map(dispensary => (

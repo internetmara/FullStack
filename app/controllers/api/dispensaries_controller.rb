@@ -2,11 +2,12 @@ class Api::DispensariesController < ApplicationController
 before_action :require_logged_in, only: [:create]
 
   def index
+    @dispensaries = Dispensary.all
     render :index
   end
 
   def show
-    @dispensary = dispensary.find(params[:id])
+    @dispensary = Dispensary.find(params[:id])
   end
 
   def create
@@ -17,6 +18,6 @@ before_action :require_logged_in, only: [:create]
   private
 
   def dispensary_params
-    params.require(:dispensary).permit(:name, :address, :type)
+    params.require(:dispensary).permit(:name, :address, :dispensary_type)
   end
 end

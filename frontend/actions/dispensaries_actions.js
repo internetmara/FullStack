@@ -1,6 +1,6 @@
-export const RECEIEVE_DISPENSARIES = 'RECEIVE_DISPENSARIES';
+export const RECEIVE_DISPENSARIES = 'RECEIVE_DISPENSARIES';
 export const RECEIVE_SINGLE_DISPENSARY = 'RECEIVE_SINGLE_DISPENSARY';
-import { getDispensaries } from '../utils/dispensaries';
+import { getDispensaries } from '../utils/dispensaries_util';
 
 
 const receiveDispensaries = dispensaries => ({
@@ -15,5 +15,5 @@ const receiveSingleDispensary = dispensary => ({
 
 export const fetchDispensaries = () => dispatch => {
   return getDispensaries()
-    .then(dispensaries => dispatch(receiveDispensaries(Dispensaries)));
+    .then(dispensaries => dispatch(receiveDispensaries(dispensaries)));
 };

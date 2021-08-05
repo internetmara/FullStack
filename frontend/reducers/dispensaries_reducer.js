@@ -1,4 +1,4 @@
-import { RECEIVE_DISPENSARIES, RECEIVE_SINGLE_DISPENSARY } from '../actions/dispensaries';
+import { RECEIVE_DISPENSARIES, RECEIVE_SINGLE_DISPENSARY } from '../actions/dispensaries_actions';
 
 export default (state = {}, action) => {
   Object.freeze(state);

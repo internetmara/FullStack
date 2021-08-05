@@ -18,17 +18,86 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.home {
+.login-signup {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
+  white-space: nowrap;
+}
+
+.nav-bar {
+  display: flex;
+  border-bottom: 0.0625rem solid rgb(230, 229, 229);
+  height: 2.5rem;
+  opacity: 1;
+  overflow: auto hidden;
+  width: 100vw;
+}
+
+.top-bar {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  grid-template-areas:
+      "hamburger logo actions"
+      "search search search";
+  row-gap: 0.5rem;
+  padding: 0.125rem max(env(safe-area-inset-left),1rem) 1rem;
+  overflow: hidden;
+}
+
+.hamburger {
+  grid-area: hamburger / hamburger / hamburger / hamburger;
+  align-self: center;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 .logo {
+  grid-area: logo / logo / logo / logo;
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.wm-logo {
   width: 50px;
   height: 50px;
+}
+
+.actions {
+  align-self: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+  grid-area: actions / actions / actions / actions;
+  display: flex;
+}
+
+#cart {
+  width: 24px;
+  height: 24px;
+  color: rgb(96, 100, 111);
+}
+
+.order-banner {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background-color: rgb(96, 100, 111);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  width: 100%;
+
 }

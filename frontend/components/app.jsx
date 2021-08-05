@@ -2,22 +2,26 @@ import React from "react";
 import GreetingContainer from "./greeting/greeting_container";
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
-import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import home from "./home/home";
-import dispensary_index_container from "./dispensary/dispensary_index_container";
+import { Route } from "react-router-dom";
 
 const App = () => (
   <div>
-    <AuthRoute exact path="/" component={home} />
-    <h2>Decriminalize it! End the drug war now! 🙅🚔⛔️</h2>
-    <h3 align="right">I'm high as a mfing kite baybeeeee</h3>
-    <GreetingContainer/>
+      <div className="top-bar">
+        <div className="hamburger"></div>
+        <div className="logo"><a href="/"><img className="wm-logo" src="/images/white-logo.png" /></a></div>
+        <div className="actions"><i className="fa fa-shopping-cart" id="cart" /></div>
+      </div>
+      <div className="nav-bar"></div>
 
+    <AuthRoute exact path="/" component={home} />
     <AuthRoute exact path="/login" component={LogInFormContainer} />
     <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-    <h4 align="center">Give job now give give!! give!!!</h4>
+    <GreetingContainer/>
+    <h4 align="center">Decriminalize it! End the drug war now! 🙅🚔⛔️</h4>
     <h5 align="center"><i>~ ~ ~ Sativa to change the things I can, and indica to accept the things I cannot. ~ ~ ~</i></h5>
-    <ProtectedRoute path="/dispensaries" component={dispensary_index_container} />
+    
   </div>
 );
 
