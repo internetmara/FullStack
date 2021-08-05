@@ -6,10 +6,11 @@ import { AuthRoute } from '../util/route_util';
 import {
   Route,
 } from 'react-router-dom';
+import home from "./home/home";
 
 const App = () => (
   <div>
-    <h1 align="center">Welcome to HashMaps where we tell <u>you</u> where to buy the devil's jazz lettuce!! !!! ! 🌿</h1>
+    <AuthRoute exact path="/" component={home} />
     <h2>Decriminalize it! End the drug war now! 🙅🚔⛔️</h2>
     <h3 align="right">I'm high as a mfing kite baybeeeee</h3>
     <GreetingContainer/>
