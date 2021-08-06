@@ -15,7 +15,8 @@ class DispensaryIndex extends React.Component {
     return (
       
       <div>
-        Hello I am dispensary buy weed frum meh
+        <div align="center">Hello I am drug dealer buy my drugs wow 420 lol</div>
+        <br />
         <ul>
           <div class="slider">
             <div class="slides">

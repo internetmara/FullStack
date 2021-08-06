@@ -169,7 +169,7 @@ body {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 100%;
-  margin-right: 50px;
+  height: 250px;
   border-radius: 10px;
   background: #eee;
   transform-origin: center center;
@@ -182,9 +182,7 @@ body {
   align-items: center;
   font-size: 100px;
 }
-.slides > div:target {
-/*   transform: scale(0.8); */
-}
+
 
 .slider > a {
   display: inline-flex;
