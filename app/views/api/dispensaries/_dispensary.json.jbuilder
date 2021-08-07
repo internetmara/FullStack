@@ -1,1 +1,1 @@
-json.extract! dispensary, :id, :name, :address, :dispensary_type
+json.extract! dispensary, :id, :name, :address, :dispensary_type, :url

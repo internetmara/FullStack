@@ -20,10 +20,10 @@ user7 = User.create(username: Faker::Name.name, email: Faker::Internet.email, pa
 user8 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
 user9 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
 
-dispensary1 = Dispensary.create(name: Faker::Movies::LordOfTheRings.character, address: Faker::Movies::LordOfTheRings.location, dispensary_type: 'Recreational')
-dispensary2 = Dispensary.create(name: Faker::Movies::LordOfTheRings.character, address: Faker::Movies::LordOfTheRings.location, dispensary_type: 'Medical')
-dispensary3 = Dispensary.create(name: Faker::Movies::LordOfTheRings.character, address: Faker::Movies::LordOfTheRings.location, dispensary_type: 'Recreational')
-dispensary4 = Dispensary.create(name: Faker::Movies::LordOfTheRings.character, address: Faker::Movies::LordOfTheRings.location, dispensary_type: 'Medical & Recreational')
-dispensary5 = Dispensary.create(name: Faker::Movies::LordOfTheRings.character, address: Faker::Movies::LordOfTheRings.location, dispensary_type: 'Recreational')
-dispensary6 = Dispensary.create(name: Faker::Movies::LordOfTheRings.character, address: Faker::Movies::LordOfTheRings.location, dispensary_type: 'Recreational')
+dispensary1 = Dispensary.create(name: "Harborside Oakland", address: "1840 Embarcadero, Oakland, CA 94606", dispensary_type: 'Recreational & Medical', url: 'images/dispensaries/Harborside.png')
+dispensary2 = Dispensary.create(name: "Cookies Oakland", address: "1776 Broadway, Oakland, CA 94612", dispensary_type: 'Medical', url: 'images/dispensaries/cookies.jpg')
+dispensary3 = Dispensary.create(name: "MedMen - Emeryville", address: "3996 San Pablo Ave, Emeryville, CA 94608", dispensary_type: 'Recreational', url: 'images/dispensaries/medmen.jpg')
+dispensary4 = Dispensary.create(name: "High Times Oakport", address: "7817 Oakport St, Oakland, CA 94621", dispensary_type: 'Medical & Recreational', url: 'images/dispensaries/hightimes.jpeg')
+dispensary5 = Dispensary.create(name: "Blum - Oakland", address: "578 W Grand Ave, Oakland, CA 94612", dispensary_type: 'Medical & Recreational', url: 'images/dispensaries/blum.jpeg')
+dispensary6 = Dispensary.create(name: "Embarc Alameda", address: "1616 Webster St, Alameda, CA 94501", dispensary_type: 'Recreational', url: 'images/dispensaries/embarc.jpg')
 

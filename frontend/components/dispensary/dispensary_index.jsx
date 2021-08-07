@@ -15,11 +15,12 @@ class DispensaryIndex extends React.Component {
     return (
       
       <div>
+        <br/>
         <div align="center">Hello I am drug dealer buy my drugs wow 420 lol</div>
         <br />
         <ul>
-          <div class="slider">
-            <div class="slides">
+          <div className="slider">
+            <div className="slides">
               <div id="slide-1">
                 Buy weed
               </div>
@@ -42,14 +43,14 @@ class DispensaryIndex extends React.Component {
             <a href="#slide-4">.</a>
             <a href="#slide-5">.</a>
           </div>
+          <div className="dispensaries">
           {
             dispensaries.map(dispensary => (
-              <DispensaryItem
-                key={`dispensary${dispensary.id}`}
-                dispensary={dispensary} />
+                <DispensaryItem key={`dispensary${dispensary.id}`} dispensary={dispensary} />
             )
             )
           }
+          </div>
         </ul>
       </div>
     )

@@ -18,6 +18,6 @@ before_action :require_logged_in, only: [:create]
   private
 
   def dispensary_params
-    params.require(:dispensary).permit(:name, :address, :dispensary_type)
+    params.require(:dispensary).permit(:name, :address, :dispensary_type, :url)
   end
 end

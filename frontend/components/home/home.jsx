@@ -4,7 +4,7 @@ import DispensaryContainer from "../dispensary/dispensary_index_container";
 export default () => (
   <div className="home">
     <div className="nav-bar">
-      <a href="api/orders">Order online</a>&nbsp;&nbsp;
+      <a href="https://weedmaps.com/">Order online</a>&nbsp;&nbsp;
       <a href="api/dispensaries">Dispensaries</a>&nbsp;&nbsp;
       <a href="api/products">Products</a>&nbsp;&nbsp;
     </div>

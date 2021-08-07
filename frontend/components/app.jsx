@@ -23,8 +23,9 @@ const App = () => (
     <AuthRoute exact path="/" component={home} />
     <AuthRoute exact path="/login" component={LogInFormContainer} />
     <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-    
+    <br/>
     <h4 align="center">Decriminalize it! End the drug war now! 🙅🚔⛔️</h4>
+    <br/>
     <h5 align="center"><i>~ ~ ~ Sativa to change the things I can, and indica to accept the things I cannot. ~ ~ ~</i></h5>
     
   </div>
