@@ -1,4 +1,4 @@
-import { RECEIVE_DISPENSARIES, RECEIVE_SINGLE_DISPENSARY } from '../actions/dispensaries_actions';
+import { RECEIVE_DISPENSARIES, RECEIVE_DISPENSARY } from '../actions/dispensary_actions';
 
 export default (state = {}, action) => {
   Object.freeze(state);
@@ -9,7 +9,7 @@ export default (state = {}, action) => {
         dispensaries[dispensary.id] = dispensary;
       });
       return dispensaries;
-    case RECEIVE_SINGLE_DISPENSARY:
+    case RECEIVE_DISPENSARY:
       return Object.assign({}, state, { [action.dispensary.id]: action.dispensary });
     default:
       return state;

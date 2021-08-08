@@ -1,5 +1,5 @@
 import React from 'react';
-import DispensaryContainer from "../dispensary/dispensary_index_container";
+import DispensaryIndexContainer from "../dispensary_index/dispensary_index_container";
 
 export default () => (
   <div className="home">
@@ -8,7 +8,7 @@ export default () => (
       <a href="api/dispensaries">Dispensaries</a>&nbsp;&nbsp;
       <a href="api/products">Products</a>&nbsp;&nbsp;
     </div>
-    <DispensaryContainer />
+    <DispensaryIndexContainer />
   </div>
 )
 

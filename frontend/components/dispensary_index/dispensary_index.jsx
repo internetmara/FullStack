@@ -1,5 +1,5 @@
 import React from 'react';
-import DispensaryItem from './dispensary_item';
+import DispensaryIndexItem from './dispensary_index_item';
 
 class DispensaryIndex extends React.Component {
   constructor(props) {
@@ -46,7 +46,7 @@ class DispensaryIndex extends React.Component {
           <div className="dispensaries">
           {
             dispensaries.map(dispensary => (
-                <DispensaryItem key={`dispensary${dispensary.id}`} dispensary={dispensary} />
+                <DispensaryIndexItem key={`dispensary${dispensary.id}`} dispensary={dispensary} />
             )
             )
           }
