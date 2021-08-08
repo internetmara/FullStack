@@ -1,24 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import DispensaryShowItem from './dispensary_show_item';
+import { ProtectedRoute } from '../../utils/route_util';
 
-class DispensaryShow extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const DispensaryShow = ({ dispensary, dispensaryId, fetchdispensary, reviews }) => {
+  const dispensaries = {
+    [dispensaryId]: dispensary
+  };
 
-  componentDidMount() {
-    this.props.fetchDispensaries();
-  }
-
-  render() {
-    const { dispensaries } = this.props;
-    return (
-
-      <div>
-         <DispensaryShowItem/>
+  return (
+    <div className="single-dispensary-show">
+      <div className="single-dispensary-map">
+        <Link to="/">Back to dispensaries Index</Link>
       </div>
-    )
-  }
-}
+      <div className="right-half dispensary-details">
+        <DispensaryShowItem dispensary={dispensary} />
+      </div>
+    </div>
+  );
+};
 
 export default DispensaryShow;
