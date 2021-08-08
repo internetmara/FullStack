@@ -1,0 +1,18 @@
+.nav-bar {
+  color: #666666;
+  font-size: 14px;
+  display: flex;
+  border-bottom: 0.0625rem solid rgb(230, 229, 229);
+  height: 2.5rem;
+  opacity: 1;
+  overflow: auto hidden;
+  width: 100vw;
+  justify-content: space-around;
+  border-top: 0.0625rem solid rgb(230, 229, 229);
+  -webkit-box-align: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0px 0.5rem;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;

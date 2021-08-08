@@ -15,9 +15,6 @@ class DispensaryIndex extends React.Component {
     return (
       
       <div>
-        <br/>
-        <div align="center">Hello I am drug dealer buy my drugs wow 420 lol</div>
-        <br />
         <ul>
           <div className="slider">
             <div className="slides">
