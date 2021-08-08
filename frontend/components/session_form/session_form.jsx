@@ -64,23 +64,20 @@ class SessionForm extends React.Component {
                   className="login-input" placeholder="Password"
                 />
                 <br />
-                <br />
                 <input className="session-submit" type="submit" value={this.props.formType} />
               </div>
-              <br/>
               <h3 className="change-form">{this.props.navLink}</h3>
               <br />
-            <p class="align-left">Weedmaps respects privacy. Names and emails aren't displayed publicly, and nothing is posted to your Facebook or Google account without permission.</p>
+            <p className="align-left">Hashmaps respects privacy. Names and emails aren't displayed publicly, and nothing is posted without permission. We will <u>never</u> rat you out to the Feds. Snitches get stiches.</p>
               <div className="signup-banner">
                 <br/>
                 <h1 className="signup-banner-text">Why sign up?</h1>
-                <br/>
                 <img className="signup-img" src="./images/signup.jpg" />
-                <ul class="align-left">
+                <ul className="signup-list">
                   <li>Order online for delivery or pickup at your convenience.</li>
                   <li>Claim deals to save money on weed.</li>
                   <li>Get updates about your favorite products, brands, and retailers.</li>
-                  <li>Leave reviews & share your experiences to help out the community.</li>
+                  <li>Help out the community by promoting responsible consumption.</li>
                 </ul>
               </div>
             </div>

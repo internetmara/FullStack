@@ -61,7 +61,6 @@
 }
 
 .login-input {
-  font-family: 'Open Sans', sans-serif;
   border: 1px solid #898989;
   border-radius: 3px;
   font-size: 14px;
@@ -74,15 +73,13 @@
 
 .align-left {
   color: #60646F;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 130%;
   
 }
 
-li {
-  display: list-item;
-}
-
-ul {
+.signup-list {
+  color: #60646F;
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -90,4 +87,5 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   margin-left: 24px;
+  line-height: 150%;
 }
