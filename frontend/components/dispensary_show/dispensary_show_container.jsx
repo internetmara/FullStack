@@ -5,6 +5,7 @@ import { selectDispensary } from '../../reducers/selectors';
 import DispensaryShow from './dispensary_show';
 
 const mSTP = (state, { match }) => {
+
   const dispensaryId = parseInt(match.params.dispensaryId);
   const dispensary = selectDispensary(state.entities, dispensaryId);
   return {
