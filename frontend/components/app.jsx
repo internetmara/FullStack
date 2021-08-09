@@ -24,11 +24,11 @@ const App = (order) => (
         </div>
       </div>
       <Switch>
-        <AuthRoute exact path="/" component={home} />
+        <Route exact path="/" component={home} />
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} /> 
-        <AuthRoute exact path="/dispensaries/:dispensaryId" component={DispensaryShowContainer} />
-        {/* <AuthRoute exact path="/orders/:orderId" component={OrderShowContainer} /> */}
+        <Route exact path="/dispensaries/:dispensaryId" component={DispensaryShowContainer} />
+        {/* <Route exact path="/orders/:orderId" component={OrderShowContainer} /> */}
       </Switch>
   </div>
 );

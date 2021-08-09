@@ -2,6 +2,7 @@ import React from 'react';
 
 
 export default ({ dispensary }) => {
+  console.log(this)
   return (
     <div>
       <ul className="dispensary-list">

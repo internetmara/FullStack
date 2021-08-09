@@ -3,6 +3,7 @@ import NavBar from '../home/nav-bar';
 import DispensaryShowItem from './dispensary_show_item';
 
 const DispensaryShow = ({ dispensary }) => {
+  console.log(this)
   return (
     <div className="show-page">
       <NavBar />
