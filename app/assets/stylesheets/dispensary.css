@@ -11,3 +11,8 @@
   display: flex;
   justify-content: center;
 }
+
+.dispensary-show-container {
+  height: auto;
+  background-image: url('/images/lame.png');
+}

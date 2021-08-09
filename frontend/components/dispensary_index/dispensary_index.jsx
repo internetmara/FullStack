@@ -20,16 +20,16 @@ class DispensaryIndex extends React.Component {
           <div className="slider">
             <div className="slides">
               <div id="slide-1">
-                buy weed!!
-              </div>
-              <div id="slide-2">
                 im high
               </div>
+              <div id="slide-2">
+                420 lol
+              </div>
               <div id="slide-3">
-                blaze it
+                buy weed!!
               </div>
               <div id="slide-4">
-                420 lol
+                blaze it
               </div>
               <div id="slide-5">
                 break stuff
@@ -38,6 +38,9 @@ class DispensaryIndex extends React.Component {
               </div>
             </div>
           </div>
+          <br/>
+          <br/>
+          <h2 className="featured-dispensaries">Featured dispensaries</h2>
           <div className="dispensaries">
           {
             dispensaries.map(dispensary => (

@@ -17,6 +17,7 @@
 body {
   font-family: 'Inter', sans-serif;
   color: rgb(37, 41, 53);
+  background-color: rgb(255, 255, 255);
 }
 
 .login-signup {
@@ -58,6 +59,7 @@ body {
 }
 .hamburger {
   min-height: 40px;
+  margin-left: 10px;
 }
 
 .logo {
@@ -130,32 +132,6 @@ body {
   text-decoration: none;
   color: inherit;
   font-size: inherit;
-}
-
-
-
-.dispensaries {
-  font-family: ;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  text-align: left;
-  flex-direction: row;
-  color: rgb(37, 41, 53);
-  font-size: 16px;
-  font-weight: 700px;
-}
-
-.dispensary-img {
-  height: 220px;
-  width: 220px;
-  max-height: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  border-radius: 0px;
 }
 
 .bottom-text {
