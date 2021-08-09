@@ -1,22 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import NavBar from '../home/nav-bar';
 
-import DispensaryShowItem from './dispensary_show_item';
-import { ProtectedRoute } from '../../utils/route_util';
-
-const DispensaryShow = ({ dispensary, dispensaryId, fetchdispensary, reviews }) => {
+const DispensaryShow = ({ dispensary, dispensaryId }) => {
   const dispensaries = {
     [dispensaryId]: dispensary
   };
 
   return (
-    <div className="single-dispensary-show">
-      <div className="single-dispensary-map">
-        <Link to="/">Back to dispensaries Index</Link>
-      </div>
-      <div className="right-half dispensary-details">
-        <DispensaryShowItem dispensary={dispensary} />
-      </div>
+    <div className="show-page">
+      <NavBar />
+      <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Select a product to start your order!</div >
     </div>
   );
 };

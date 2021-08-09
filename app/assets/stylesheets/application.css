@@ -129,9 +129,12 @@ body {
 }
 
 .slider {
-  width: 100%;
+  align-items: center;
+  width: 90%;
   text-align: center;
   overflow: hidden;
+  justify-content: center;
+  margin-left: 6%;
 }
 
 .slides {
@@ -155,17 +158,16 @@ body {
   background: transparent;
 }
 .slides > div {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   flex-shrink: 0;
   width: 100%;
-  height: 250px;
+  height: 350px;
   border-radius: 10px;
   background: #eee;
   transform-origin: center center;
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,6 +211,7 @@ body {
 }
 
 .dispensaries {
+  font-family: ;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -232,8 +235,6 @@ body {
 }
 
 .bottom-text {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  vertical-align: sub;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
