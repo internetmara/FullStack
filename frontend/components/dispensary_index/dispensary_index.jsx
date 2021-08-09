@@ -16,29 +16,27 @@ class DispensaryIndex extends React.Component {
       
       <div>
         <ul>
+          <br/>
           <div className="slider">
             <div className="slides">
               <div id="slide-1">
-                Buy weed
+                buy weed!!
               </div>
               <div id="slide-2">
-                Terpenes are cool
+                im high
               </div>
               <div id="slide-3">
-                Fuck the Man
+                blaze it
               </div>
               <div id="slide-4">
-                I'm really high
+                420 lol
               </div>
               <div id="slide-5">
-                Break Stuff, Steal Things!
+                break stuff
+                <br/>
+                steal things!
               </div>
             </div>
-            <a href="#slide-1">.</a>
-            <a href="#slide-2">.</a>
-            <a href="#slide-3">.</a>
-            <a href="#slide-4">.</a>
-            <a href="#slide-5">.</a>
           </div>
           <div className="dispensaries">
           {

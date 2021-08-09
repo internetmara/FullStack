@@ -4,10 +4,11 @@ import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import home from "./home/home";
-import { Route, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import DispensaryShowContainer from "./dispensary_show/dispensary_show_container";
+import OrderShowContainer from "./orders/order_show_container";
 
-const App = () => (
+const App = (order) => (
   <div>
       <div className="top-bar">
         <div className="hamburger">
@@ -18,7 +19,7 @@ const App = () => (
           </a>
         </div>
         <div className="logo"><a href="/"><img className="wm-logo" src="/images/white-logo.png" /></a></div>
-        <div className="actions"><i className="fa fa-shopping-cart" id="cart" />
+        <div className="actions"><Link to={`/orders/${order.id}`}><i className="fa fa-shopping-cart" id="cart" /></Link>
         <GreetingContainer />
         </div>
       </div>
@@ -26,7 +27,8 @@ const App = () => (
         <AuthRoute exact path="/" component={home} />
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} /> 
-        <AuthRoute exact path="/dispensaries/:dispensaryId" component={DispensaryShowContainer} /> 
+        <AuthRoute exact path="/dispensaries/:dispensaryId" component={DispensaryShowContainer} />
+        {/* <AuthRoute exact path="/orders/:orderId" component={OrderShowContainer} /> */}
       </Switch>
   </div>
 );
