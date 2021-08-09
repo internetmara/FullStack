@@ -1,4 +1,13 @@
-.please-work {
-  margin-top: 10px;
-  margin-left: 10px;
+.theory {
+  font-size: 70px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-theory {
+  font-size: 40px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
 }

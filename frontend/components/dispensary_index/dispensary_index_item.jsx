@@ -3,7 +3,6 @@ import {
   Link,
   Route,
 } from 'react-router-dom';
-import DispensaryShowContainer from '../dispensary_show/dispensary_show_container';
 
 export default ({ dispensary }) => {
   return (
