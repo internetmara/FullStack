@@ -8,9 +8,9 @@ export default ({ product }) => {
     <li>
       <br/>
       <Link to={`/products/${product.id}`}>
-        <img className="product-img" src={product.url} />
-        <h3>{product.name}</h3>
-        <h3>{product.type}</h3>
+        <img className="product-index-img" src={product.url} />
+        <h3 className="product-index-name">{product.name}</h3>
+        <h3 className="product-index-category">{product.category}</h3>
       </Link>
       <br />
     </li>

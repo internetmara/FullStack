@@ -17,7 +17,7 @@ class DispensaryShow extends React.Component {
       return null
     }
     return (
-      <div className="show-page">
+      <div className="dispensary-show-page">
         <NavBar />
         <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Select a product to start your order!</div >
         <DispensaryShowItem key={`dispensary${dispensary.id}`} dispensary={dispensary} />

@@ -17,7 +17,7 @@ class ProductShow extends React.Component {
       return null
     }
     return (
-      <div className="show-page">
+      <div className="product-show-page">
         <NavBar />
         <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Select a product to start your order!</div >
         <ProductShowItem key={`product${product.id}`} product={product} />

@@ -9,8 +9,7 @@ export default ({ order }) => {
     <li>
       <br />
       <Link to={`/orders/${order.id}`}>
-        <img className="dispensary-img" src={dispensary.url} />
-        <h3>{dispensary.name}</h3>
+        Orders here!
       </Link>
       <br />
     </li>

@@ -3,5 +3,5 @@ export const getOrders = () => $.ajax({
 });
 
 export const getOrder = (orderId) => $.ajax({
-  url: '/api/order',
+  url: `/api/orders/${orderId}`,
 });

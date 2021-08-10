@@ -1,6 +1,6 @@
 export const RECEIVE_ORDERS = 'RECEIVE_ORDERS';
 export const RECEIVE_ORDER = 'RECEIVE_ORDER';
-import { getOrders } from '../utils/orders_util';
+import { getOrders, getOrder } from '../utils/orders_util';
 
 const receiveOrders = orders => ({
   type: RECEIVE_ORDERS,
@@ -18,7 +18,7 @@ export const fetchOrders = () => dispatch => {
 };
 
 export const fetchOrder = id => dispatch => (
-  APIUtil.fetchOrder(id).then(payload => (
+  getOrder(id).then(payload => (
     dispatch(receiveOrder(payload))
   ))
 );
