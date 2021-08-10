@@ -8,9 +8,10 @@ const receiveDispensaries = dispensaries => ({
   dispensaries
 });
 
-const receiveDispensary = dispensary => ({
+const receiveDispensary = payload => ({
   type: RECEIVE_DISPENSARY,
-  dispensary
+  dispensary: payload.dispensary,
+  products: payload.products
 });
 
 export const fetchDispensaries = () => dispatch => {
@@ -19,7 +20,7 @@ export const fetchDispensaries = () => dispatch => {
 };
 
 export const fetchDispensary = id => dispatch => (
-  getDispensary(id).then(payload => (
+  getDispensary(id).then(payload => {
     dispatch(receiveDispensary(payload))
-  ))
+  })
 );

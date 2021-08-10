@@ -1,10 +1,8 @@
 import React from 'react';
 
-
-
 export default ({ dispensary }) => {
   return (
-    <div className="dispenssary-show">
+    <div className="dispensary-show">
       <div className="dispensary-info">
         <img className="dispensary-show-img" src={dispensary.url} />
         

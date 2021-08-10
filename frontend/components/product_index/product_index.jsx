@@ -6,8 +6,11 @@ class ProductIndex extends React.Component {
     super(props);
   }
 
+  
   componentDidMount() {
-    this.props.fetchProducts();
+    if (this.props.products === null) {
+      this.props.fetchProducts();
+    }
   }
 
   render() {

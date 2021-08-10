@@ -9,6 +9,12 @@ export const receiveCurrentUser = currentUser => ({
   currentUser
 });
 
+export const fetchCurrentUser= id => dispatch => (
+  getCurrentUser(id).then(payload => {
+    dispatch(receiveCurrentUser(payload))
+  })
+);
+
 export const logoutCurrentUser = () => ({
   type: LOGOUT_CURRENT_USER,
 });

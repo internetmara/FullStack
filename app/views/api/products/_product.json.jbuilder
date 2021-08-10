@@ -1,1 +1,1 @@
-json.extract! product, :dispensary_id, :name, :brand, :price, :category, :size, :url
+json.extract! product, :id, :dispensary_id, :name, :brand, :price, :category, :size, :url

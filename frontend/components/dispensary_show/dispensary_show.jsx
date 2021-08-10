@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../home/nav-bar';
 import DispensaryShowItem from './dispensary_show_item';
 import ProductIndexContainer from './../product_index/product_index_container'
+
 class DispensaryShow extends React.Component {
   constructor(props) {
     super(props);

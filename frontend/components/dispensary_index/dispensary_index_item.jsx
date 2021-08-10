@@ -11,7 +11,6 @@ export default ({ dispensary }) => {
       <img className="dispensary-img" src={dispensary.url}/>
       <h3 className="dispensary-index-name">{dispensary.name}</h3>
       </Link>
-      <br />
     </li>
   );
 }

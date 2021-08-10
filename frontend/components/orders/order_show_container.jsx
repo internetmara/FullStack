@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-
 import { fetchOrder } from '../../actions/order_actions';
 import { selectOrder } from '../../reducers/selectors';
 import OrderShow from './order_show';

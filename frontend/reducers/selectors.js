@@ -10,6 +10,11 @@ export const selectOrder = ({ orders }, orderId) => {
   return orders[orderId];
 };
 
+export const selectSession = ({ sessions }, sessionId) => {
+  return sessions[sessionId];
+};
+
+
 export const asDispensariesArray = ({ dispensaries }) => (
   Object.keys(dispensaries).map(key => dispensaries[key])
 );

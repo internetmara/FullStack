@@ -5,6 +5,8 @@
   display: block;
   box-sizing: border-box;
   max-width: 512px;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
@@ -15,6 +17,7 @@
   padding-top: 0;
   position: relative;
   width: 100%;
+  align-items: center;
 }
 
 .signup-img {
