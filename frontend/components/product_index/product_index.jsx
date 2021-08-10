@@ -14,7 +14,7 @@ class ProductIndex extends React.Component {
     const { products } = this.props;
     return (
 
-      <div>
+      <ul>
         <h2 className="featured-products">Featured products</h2>
         <div className="products">
           {
@@ -24,7 +24,7 @@ class ProductIndex extends React.Component {
             )
           }
         </div>
-      </div>
+      </ul>
     )
   }
 }

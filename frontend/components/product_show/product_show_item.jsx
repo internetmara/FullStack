@@ -5,7 +5,7 @@ export default ({ product }) => {
   return (
     <div className="product-show">
       <div className="product-info">
-        {/* <img className="product-show-img" src={product.url} /> */}
+        <img className="product-show-img" src={product.url} />
 
         <div className="product-show-info">
           <p className="product-name">{product.name}</p>
