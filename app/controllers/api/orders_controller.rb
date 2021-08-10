@@ -2,12 +2,12 @@ class Api::OrdersController < ApplicationController
 before_action :require_logged_in, only: [:create]
 
   def show
-    @dispensary = Order.find(params[:id])
+    @order = Order.find(params[:id])
     render :show
   end
 
   def create
-    @dispensary = Order.create!(order_params)
+    @order = Order.create!(order_params)
   end
 
   def update

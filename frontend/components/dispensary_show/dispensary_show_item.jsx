@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 export default ({ dispensary }) => {
   return (
     <div className="dispenssary-show">
@@ -31,8 +32,7 @@ export default ({ dispensary }) => {
           </div>
         </div>
 
-        <div classname="dispensary-search-bar"></div>
-
+        <div className="dispensary-search-bar"></div>
       </div>
     </div>
   );

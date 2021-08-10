@@ -6,7 +6,8 @@ import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import home from "./home/home";
 import { Link, Route, Switch } from "react-router-dom";
 import DispensaryShowContainer from "./dispensary_show/dispensary_show_container";
-import OrderShowContainer from "./orders/order_show_container";
+import OrderShowContainer from "./orders/order_show_container"
+import ProductShowContainer from "./product_show/product_show_container"
 
 const App = (order) => (
   <div>
@@ -28,7 +29,8 @@ const App = (order) => (
         <AuthRoute exact path="/login" component={LogInFormContainer} />
         <AuthRoute exact path="/signup" component={SignUpFormContainer} /> 
         <Route exact path="/dispensaries/:dispensaryId" component={DispensaryShowContainer} />
-        {/* <Route exact path="/orders/:orderId" component={OrderShowContainer} /> */}
+        <Route exact path="/orders/:orderId" component={OrderShowContainer} />
+        <Route exact path="/products/:productId" component={ProductShowContainer} />
       </Switch>
   </div>
 );
