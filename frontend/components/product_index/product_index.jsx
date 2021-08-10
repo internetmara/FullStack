@@ -13,18 +13,20 @@ class ProductIndex extends React.Component {
   render() {
     const { products } = this.props;
     return (
-
-      <ul>
-        <h2 className="featured-products">Featured products</h2>
-        <div className="products">
-          {
-            products.map(product => (
-              <ProductIndexItem key={`product${product.id}`} product={product} />
-            )
-            )
-          }
-        </div>
-      </ul>
+      <div>
+        <ul>
+          <br/>
+          <h2 className="featured-products">Featured products</h2>
+          <div className="products">
+            {
+              products.map(product => (
+                <ProductIndexItem key={`product${product.id}`} product={product} />
+              )
+              )
+            }
+          </div>
+        </ul>
+      </div>
     )
   }
 }
