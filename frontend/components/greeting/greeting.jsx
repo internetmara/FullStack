@@ -13,8 +13,11 @@ const Greeting = ({ currentUser, logout }) => {
   );
   const personalGreeting = () => (
     <hgroup className="header-group">
-      <h2 className="header-name"><img src=""/></h2>
-      <button className="header-button" onClick={logout}>Log Out</button>
+      <Link to={`orders/`}>
+        <i className="fa fa-shopping-cart" id="cart" />
+      </Link>
+      <h2 className="header-name"><img src="/images/icons/user.png"/></h2>
+      <button className="logout-header-button" onClick={logout}>Log Out</button>
     </hgroup>
   );
 

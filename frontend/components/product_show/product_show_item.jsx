@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom';
-import QuantitySelector from './quantity_selector';
+import QuantitySelector from '../quantity_selector/quantity_selector';
 
 export default ({ product, dispensary }) => {
   return (

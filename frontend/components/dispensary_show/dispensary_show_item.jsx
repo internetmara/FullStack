@@ -23,7 +23,7 @@ export default ({ dispensary }) => {
           <div className="dispensary-details">
             <p className="storefront"><img className="dispensary-icon" src="/images/icons/store.png" />&nbsp;Storefront</p>
             <p className="in-store"><img className="dispensary-icon" src="/images/icons/clock.png" />&nbsp;Open until 8:00pm</p>
-            <p className="dispensary-type"><img className="dispensary-icon" src="/images/icons/id-card.png" />&nbsp;{dispensary.dispensary_type}</p>
+            <p className="dispensary-type"><img className="dispensary-icon" src="/images/icons/id-card.png" />&nbsp;{dispensary.dispensaryType}</p>
             <p className="in-store"><img className="dispensary-icon" src="/images/icons/check.png" />&nbsp;License information</p>
             <p className="in-store"><i className="fa fa-shopping-cart" />&nbsp;In-store purchases only</p>
             <p className="in-store"><img className="dispensary-icon" src="/images/icons/car.png" />&nbsp;Curbside pickup</p>
