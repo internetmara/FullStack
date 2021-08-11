@@ -5,7 +5,6 @@ import Slider from './slider';
 
 export default () => (
   <div className="home">
-    <NavBar />
     <Slider />
     <DispensaryIndexContainer />
   </div>
