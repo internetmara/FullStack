@@ -1,13 +1,11 @@
 .navbar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #666666;
-  font-size: 14px;
   display: flex;
   border-bottom: 0.0625rem solid rgb(230, 229, 229);
   height: 2.5rem;
   opacity: 1;
   overflow: auto hidden;
-  width: 100vw;
+  width: auto;
   justify-content: space-around;
   border-top: 0.0625rem solid rgb(230, 229, 229);
   -webkit-box-align: center;

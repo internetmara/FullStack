@@ -6,19 +6,19 @@ export default ({ }) => {
       <br/>
       <div className="slides">
         <div id="slide-1">
-          im high
+          &nbsp;&nbsp;&nbsp;&nbsp;drugs are cool
         </div>
         <div id="slide-2">
           420 lol
         </div>
         <div id="slide-3">
-          buy weed!!
+          &nbsp;&nbsp;&nbsp;buy weed!!!!!
         </div>
         <div id="slide-4">
-          blaze it
+          &nbsp;&nbsp;vape nation
         </div>
         <div id="slide-5">
-          break stuff
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break stuff
           <br />
           steal things!
         </div>

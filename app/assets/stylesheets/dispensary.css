@@ -108,14 +108,16 @@
   object-fit: cover;
   border-radius: 6px;
   height: auto;
-  margin: 10px;
   align-content: center;
   align-self: center;
 }
 
-li {
+li > * {
+  display: flex;
+  justify-content: center;
   align-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .dispensary-index-name {
