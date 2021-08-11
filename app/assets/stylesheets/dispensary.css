@@ -86,8 +86,9 @@
 
 .featured-dispensaries {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 4%;
+  margin-left: 2%;
   font-size: 25px;
+  margin-top: -10px;
 }
 
 .dispensaries {
@@ -123,4 +124,5 @@ li > * {
 .dispensary-index-name {
   text-align: center;
   font-size: 2vmin;
+  margin-top: 5px;
 }
