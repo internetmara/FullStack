@@ -1,5 +1,4 @@
 import React from "react";
-import GreetingContainer from "./greeting/greeting_container";
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
@@ -11,7 +10,7 @@ import ProductShowContainer from "./product_show/product_show_container"
 // import TopBarContainer from "./top-bar/top-bar_container";
 import TopBarItem from "./top-bar/top-bar_item";
 
-const App = (order) => (
+const App = () => (
   <div>
     <TopBarItem/>
     <Switch>

@@ -23,7 +23,7 @@ class ProductIndex extends React.Component {
           <div className="products">
             {
               products.map(product => (
-                <ProductIndexItem key={`product${product.id}`} product={product} />
+                <ProductIndexItem key={`product${product.id}`} product={product}/>
               )
               )
             }

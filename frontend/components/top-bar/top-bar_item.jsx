@@ -13,7 +13,7 @@ export default ({ }) => {
         </a>
       </div>
       <div className="logo"><a href="/"><img className="wm-logo" src="/images/white-logo.png" /></a></div>
-      <div className="actions"><Link to={`/`}><i className="fa fa-shopping-cart" id="cart" /></Link>
+      <div className="actions"><Link to={`orders/`}><i className="fa fa-shopping-cart" id="cart" /></Link>
         <GreetingContainer/>
       </div>
     </div>

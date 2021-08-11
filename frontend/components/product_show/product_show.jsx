@@ -8,19 +8,21 @@ class ProductShow extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchProduct(this.props.productId);
+    this.props.fetchProduct(this.props.productId)
+      .then(() => this.props.fetchDispensary(this.props.product.dispensaryId));
   }
 
   render() {
-    const { product } = this.props;
-    if (product === undefined) {
+    const { product, dispensary } = this.props;
+    console.log(this.props)
+    if ((product === undefined) || (dispensary === undefined)) {
       return null
     }
     return (
       <div className="product-show-page">
         <NavBar />
         <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Save on weed today by buying before inflation goes up!</div >
-        <ProductShowItem key={`product${product.id}`} product={product} />
+        <ProductShowItem key={`product${product.id}`} product={product} dispensary={dispensary} />
       </div>
     );
   };
