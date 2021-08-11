@@ -18,7 +18,6 @@ class OrderShow extends React.Component {
     }
     return (
       <div className="show-page">
-        <NavBar />
         <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Select a product to start your order!</div >
         <OrderShowItem key={`order${order.id}`} order={order} />
       </div>
