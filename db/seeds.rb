@@ -5,20 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'faker'
+# require 'faker'
 
 User.destroy_all
 Dispensary.destroy_all
 
-user1 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user2 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user3 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user4 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user5 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user6 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user7 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user8 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
-user9 = User.create(username: Faker::Name.name, email: Faker::Internet.email, password: 'password')
+user1 = User.create(username: "mara", email: "mara@mara.com", password: 'maramara')
+user2 = User.create(username: "mike", email: "mike@mike.com", password: 'mikemike')
+user3 = User.create(username: "veronika", email: "submissive@breedable.com", password: 'exactlyright')
 
 dispensary1 = Dispensary.create(name: "Harborside Oakland", address: "1840 Embarcadero, Oakland, CA 94606", dispensary_type: 'Recreational & Medical', url: 'images/dispensaries/Harborside.png')
 dispensary2 = Dispensary.create(name: "Cookies Oakland", address: "1776 Broadway, Oakland, CA 94612", dispensary_type: 'Medical', url: 'images/dispensaries/cookies.jpg')

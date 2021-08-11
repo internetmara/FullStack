@@ -25,10 +25,57 @@ class SessionForm extends React.Component {
     this.props.processForm(user);
   }
 
+  // guestLogin(e) {
+  //   e.preventDefault();
+  //   const guest = { username: "guest", email: "guest@email.com", password: "password" };
+  //   this.props.guestLogin(guest);
+  // }
+
+
   guestLogin(e) {
     e.preventDefault();
     const guest = { username: "guest", email: "guest@email.com", password: "password" };
-    this.props.guestLogin(guest);
+    let { username, email, password } = guest;
+    let interval = 100;
+    let login = () => {
+      this.props.processForm(this.state);
+      this.props.history.push("/")
+    };
+    if (this.state.username !== username) {
+      let inputUsername = setInterval(() => {
+        if (this.state.username !== username) {
+          let tempUsername = username.slice(0, this.state.username.length + 1);
+          this.setState({ username: tempUsername });
+        } else {
+          clearInterval(inputUsername);
+          fillEmail()
+        }
+      }, interval);
+    }
+    let fillEmail = () => {
+    if (this.state.email !== email) {
+          let inputEmail = setInterval(() => {
+            if (this.state.email !== email) {
+              let tempEmail = email.slice(0, this.state.email.length + 1);
+              this.setState({ email: tempEmail });
+            } else {
+              clearInterval(inputEmail);
+              fillPassword();
+            }
+          }, interval);
+      };
+    }
+    let fillPassword = () => {
+      let inputPassword = setInterval(() => {
+        if (this.state.password !== password) {
+          let tempPassword = password.slice(0, this.state.password.length + 1);
+          this.setState({ password: tempPassword });
+        } else {
+          clearInterval(inputPassword);
+          login();
+        }
+      }, interval);
+    };
   }
 
   renderErrors() {

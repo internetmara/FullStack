@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: center;
   margin: 0px, 0px, 16px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .change-form {
@@ -73,8 +73,15 @@
   margin: 0px 0px 14px 0px;
   padding: 0;
   width: 100%;
-  background-color: #88d1ce;
-  color: white;
+  color: #00a8a3;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:hover {
+  cursor: pointer;
 }
 
 .login-input {

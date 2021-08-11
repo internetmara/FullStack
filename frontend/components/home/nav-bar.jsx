@@ -8,7 +8,7 @@ export default ({ }) => {
       <Link to="/orders">Cart</Link>
       <Link to="/dispensaries">Dispensaries</Link>
       <Link to="/products">Products</Link>
-      <a href="https://www.google.com/maps/search/dispensaries">Maps</a>
+      <Link to="/maps">Maps</Link>
       <a href="http://www.linkedin.com/in/marafinkel">About</a>
     </div>
   );

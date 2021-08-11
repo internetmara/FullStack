@@ -12,6 +12,7 @@ import TopBarItem from "./top-bar/top-bar_item";
 import DispensariesShowContainer from "./dispensary_show/dispensaries_show_container";
 import NavBar from "./home/nav-bar";
 import ProductsShowContainer from "./product_show/products_show_container";
+import SimpleMap from "./map/map";
 
 const App = () => (
   <div>
@@ -26,6 +27,7 @@ const App = () => (
       <Route exact path="/products/:productId" component={ProductShowContainer} />
       <Route exact path="/products" component={ProductsShowContainer} />
       <AuthRoute exact path="/orders/:orderId" component={OrderShowContainer} />
+      <Route exact path="/maps" component={ SimpleMap} />
     </Switch>
   </div>
 );
