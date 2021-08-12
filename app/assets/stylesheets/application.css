@@ -30,3 +30,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
+
+.dispensary-icon {
+  height: 24px;
+}
