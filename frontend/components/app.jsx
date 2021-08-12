@@ -10,7 +10,7 @@ import ProductShowContainer from "./product_show/product_show_container"
 import TopBarItem from "./top-bar/top-bar_item";
 import DispensariesShowContainer from "./dispensary_show/dispensaries_show_container";
 import NavBar from "./home/nav-bar";
-import ProductsShowContainer from "./product_show/products_show_container";
+import ProductIndexContainer from "./product_index/product_index_container";
 import SimpleMap from "./map/map";
 import OrderIndexContainer from '../components/orders/order_index_container';
 
@@ -25,7 +25,7 @@ const App = () => (
       <Route exact path="/dispensaries/:dispensaryId" component={DispensaryShowContainer} />
       <Route exact path="/dispensaries" component={DispensariesShowContainer} />
       <Route exact path="/products/:productId" component={ProductShowContainer} />
-      <Route exact path="/products" component={ProductsShowContainer} />
+      <Route exact path="/products" component={ProductIndexContainer} />
       <Route exact path="/maps" component={ SimpleMap} />
       <Route exact path='/orders' component={OrderIndexContainer} />
     </Switch>

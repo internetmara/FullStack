@@ -8,7 +8,7 @@ class ProductIndex extends React.Component {
 
   
   componentDidMount() {
-    if (this.props.products === null) {
+    if (this.props.flag) {
       this.props.fetchProducts();
     }
   }

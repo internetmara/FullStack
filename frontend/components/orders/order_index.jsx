@@ -101,12 +101,6 @@ class Orders extends React.Component {
             <div className='order-product-price'>
               <div className='order--name'>{this.props.products[productId].name}</div>
               <div className='order--price'>${this.sumTotal(Id, productId)}.00</div>
-            <div className='size-quantity-box'>
-              <div className='size-order'>Size  {this.props.products[productId].size}</div>
-
-              <div className='quantity-select' > Quantity &nbsp;
-              </div>
-            </div>
 
             <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button>
           </div>
@@ -154,7 +148,7 @@ class Orders extends React.Component {
           </div>
 
           <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
-          <div className='paypal'><button onClick={this.togglePopUpVenmo} className='checkout-paypal'><i className='fab fa-paypal fa-3x' style={{ color: 'blue' }}></i></button></div>
+          <div className='paypal'><button onClick={this.togglePopUpVenmo} className='checkout-paypal'>Venmo!</button></div>
 
           {this.state.showPopupEmptyCheckout ?
             <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}

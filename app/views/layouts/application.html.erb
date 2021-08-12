@@ -20,7 +20,11 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
     </style>
+    <script type="text/javascript">
+  window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
+</script>
     </div>
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

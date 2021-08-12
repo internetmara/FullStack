@@ -3,9 +3,9 @@ before_action :require_logged_in, only: [:create]
 
   def index 
     if current_user 
-        @order = current_user.order 
+        @orders = current_user.orders
     else
-        @order = []
+        @orders = []
     end 
 
     render :index
