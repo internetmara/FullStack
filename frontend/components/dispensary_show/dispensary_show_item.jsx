@@ -4,7 +4,7 @@ export default ({ dispensary }) => {
   return (
     <div className="dispensary-show">
       <div className="dispensary-info">
-        <img className="dispensary-show-img" src={dispensary.url} />
+        <img className="dispensary-show-img" src={dispensary.photoUrl} />
         
         <div className="dispensary-show-info">
           <p className="dispensary-name">{dispensary.name}</p>
