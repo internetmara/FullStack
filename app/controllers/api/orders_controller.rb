@@ -1,21 +1,46 @@
 class Api::OrdersController < ApplicationController
 before_action :require_logged_in, only: [:create]
 
-  def show
+  def index 
+    if current_user 
+        @order = current_user.order 
+    else
+        @order = []
+    end 
+
+    render :index
+  end
+
+  def show 
     @order = Order.find(params[:id])
     render :show
   end
 
-  def create
-    @order = Order.create!(order_params)
+  def create 
+    @order = Order.new(order_params)
+  
+    if @order.save 
+        render :show 
+    else 
+        render json: @order.errors.full_messages, status: 422
+    end
   end
 
   def update
+    @order = Order.find_by(id: params[:id])
+    if @order.update(order_params)
+      render :show
+    else 
+      render json: @order.errors.full_messages, status: 422
+    end
   end
 
   def destroy
-  end
-
+      @order = Order.find_by(id: params[:id])
+      @order.destroy 
+      render :show 
+    end
+  
   private
 
   def order_params

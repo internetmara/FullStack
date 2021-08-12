@@ -3,6 +3,7 @@ import { fetchDispensary } from '../../actions/dispensary_actions';
 import { fetchProduct } from '../../actions/product_actions';
 import { selectProduct } from '../../reducers/selectors';
 import ProductShow from './product_show';
+import { fetchOrders } from '../../actions/order_actions';
 
 const mSTP = (state, { match }) => {
 
@@ -19,7 +20,8 @@ const mSTP = (state, { match }) => {
 
 const mDTP = dispatch => ({
   fetchProduct: id => dispatch(fetchProduct(id)),
-  fetchDispensary: id => dispatch(fetchDispensary(id))
+  fetchDispensary: id => dispatch(fetchDispensary(id)),
+  fetchOrders: () => dispatch(fetchOrders())
 });
 
 export default connect(mSTP, mDTP)(ProductShow);
