@@ -134,7 +134,7 @@ class Orders extends React.Component {
 
   emptyOrder() {
     return (
-      <div className='order-s-container'>
+      <div className='orders-container'>
         <div className='Order-left1'>
           <div className='Order-header1'>Your Order Is Empty</div>
         </div>
@@ -146,10 +146,10 @@ class Orders extends React.Component {
             <div className='total-header'>Total</div>
             <div className='total-price'>$0.00</div>
           </div>
-
-          <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
-          <div className='paypal'><button onClick={this.togglePopUpVenmo} className='checkout-paypal'>Venmo!</button></div>
-
+          <div className="order-buttons">
+            <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
+            <div className='paypal'><button onClick={this.togglePopUpVenmo} className='checkout-paypal'>Venmo!</button></div>
+          </div>
           {this.state.showPopupEmptyCheckout ?
             <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
           {this.state.showPopupVenmo ?

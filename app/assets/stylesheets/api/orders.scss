@@ -6,12 +6,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.order-items-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    // width:100%;
-    top: 150px;
+.orders-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  top: 150px;
+  margin: auto;
+  margin-top: 10%;
 }
 
 .order-left{
@@ -93,7 +95,6 @@
     border-radius: 5px;
 }
 
-
 .order-right{
     width: 300px;
 }
@@ -165,10 +166,6 @@
     color: rgba(130, 130, 130, 1);
 }
 
-.order-gender-color{
-    font-family: 'Baloo Tamma 2', cursive;
-    color: rgba(130, 130, 130, 1);
-}
 
 .delete-button{
     border: none;
@@ -180,7 +177,6 @@
     font-size: 15px;
     padding: 0px;
 }
-
 
 .summary{
     font-family: 'Roboto', sans-serif;
@@ -196,21 +192,6 @@
     padding-bottom: 15px;
 }
 
-.shipping{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    padding-bottom: 15px;
-}
-
-.tax{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid lightgray;
-}
-
 .total{
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 1px;
@@ -220,61 +201,38 @@
     padding-bottom: 30px;
 }
 
-.checkout{
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.paypal{
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
-}
-.checkoutButton{
-    visibility: visible;
-    border:none;
-    border-radius: 50px;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    width: 100%;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 1px;
-
-}
-
-.checkoutButton:focus{
-    outline:0;
-}
-
-.checkoutButton:hover{
-    background-color: lightgray;
+.checkoutButton {
+  color: white;
+  font-size: 13px;
+  border: 0px;
+  margin: 0px 0px 0px 8px;
+  background-color: #00a8a3;
+  border-radius: 9999px;
+  padding: 7px 16px;
+  text-decoration: none;
 }
 
 .checkout-paypal{
-    visibility: visible;
-    border:none;
-    border-radius: 50px;
-    background-color: lightgray;
-    color: white;
-    padding: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
-    width: 100%;
-    cursor: pointer;
+  color: white;
+  font-size: 13px;
+  border: 0px;
+  margin: 0px 0px 0px 8px;
+  background-color: #00a8a3;
+  border-radius: 9999px;
+  padding: 7px 16px;
+  text-decoration: none;
 }
 
-.checkout-paypal:focus{
-    outline:0;
+.checkoutButton:hover, .checkout-paypal:hover{
+    background-color: lightgray;
+    color: black;
 }
-.checkout-paypal:hover{
-    background-color: darkgrey;
+
+.order-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .kobe-gif{

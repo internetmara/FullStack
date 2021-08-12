@@ -6,7 +6,7 @@ export default ({ }) => {
       <br/>
       <div className="slides">
         <div id="slide-1">
-          &nbsp;&nbsp;&nbsp;&nbsp;drugs are cool
+          &nbsp;&nbsp;&nbsp;&nbsp;HashMaps
         </div>
         <div id="slide-2">
           420 lol

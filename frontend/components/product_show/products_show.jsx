@@ -41,7 +41,7 @@ class ProductsShow extends React.Component {
       <div>
         <ul>
           <br />
-          <h2 className="featured-products">Products</h2>
+          <h2 className="products-header">Products</h2>
           <div className="products">
             {
               products.map(product => (
