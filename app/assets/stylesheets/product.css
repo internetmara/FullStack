@@ -40,13 +40,13 @@
 .products {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   position: relative;
-  text-align: center;
   flex-direction: row;
   color: rgb(37, 41, 53);
-  font-size: 16px;
-  max-width: 250px;
-  margin-left: 3%;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
 }
 
 .product-index-category {
