@@ -44,11 +44,11 @@ demo
   <img width="700" src="https://user-images.githubusercontent.com/76984497/129398668-f497ab92-70fd-48cf-bbed-4fb782101c4e.gif">
 </p>
 
-* Dispensary Index Page
+* HashMaps Home Page
   * Shows all dispensaries
-  * 
+  
 <p align="center">
-  <img width"700" src="https://user-images.githubusercontent.com/76984497/129398659-a0a84a3f-1a3c-4dd7-a37b-aae58e3b1e3b.gif">
+  <img width="700" src="https://user-images.githubusercontent.com/76984497/129398659-a0a84a3f-1a3c-4dd7-a37b-aae58e3b1e3b.gif">
 </p>
 
 * Dispensary Show Page
@@ -56,7 +56,7 @@ demo
   * Links to product show page
 
 <p align="center">
-  <img width"700" src="https://user-images.githubusercontent.com/76984497/129398670-c0e98ddf-643a-4bda-b0a1-03396c4def47.gif">
+  <img width="700" src="https://user-images.githubusercontent.com/76984497/129398670-c0e98ddf-643a-4bda-b0a1-03396c4def47.gif">
 </p>
 
 * Map
@@ -64,7 +64,7 @@ demo
   * Clicking on a dispensary location links to the dispensary show page
 
 <p align="center">
-  <img width"700" src="https://user-images.githubusercontent.com/76984497/129398484-c89b0bc1-b6c9-4536-a424-5f786e67a71c.gif">
+  <img width="700" src="https://user-images.githubusercontent.com/76984497/129398484-c89b0bc1-b6c9-4536-a424-5f786e67a71c.gif">
 </p>
 
 CODE SAMPLE!!
