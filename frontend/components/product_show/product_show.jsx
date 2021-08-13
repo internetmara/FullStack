@@ -20,7 +20,7 @@ class ProductShow extends React.Component {
   }
 
   render() {
-    const { product, dispensary, currentUserId, userOrders, history, newItem } = this.props;
+    const { product, dispensary, currentUserId, userOrders, history, newItem, createOrder } = this.props;
     console.log(this.props)
     if ((product === undefined) || (dispensary === undefined)) {
       return null
@@ -28,7 +28,7 @@ class ProductShow extends React.Component {
     return (
       <div className="product-show-page">
         <div className="order-banner"> <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Save on weed today by buying before inflation goes up!</div >
-        <ProductShowItem key={`product${product.id}`} product={product} dispensary={dispensary} currentUserId={currentUserId} userOrders={userOrders} history={history} />
+        <ProductShowItem key={`product${product.id}`} product={product} dispensary={dispensary} currentUserId={currentUserId} userOrders={userOrders} history={history} createOrder={createOrder} />
       </div>
     );
   };

@@ -2,15 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import QuantitySelector from '../quantity_selector/quantity_selector';
 
-export default ({ product, dispensary, currentUserId, userOrders, history }) => {
+
+export default ({ product, dispensary, currentUserId, userOrders, history, createOrder }) => {
   
-  const addItem = (newItem, currentUserId) => {
+  const addItem = (newItem) => {
     createOrder({
-      user_id: currentUserId,
-      product_id: newItem.id,
-      quantity: 1
+      userId: currentUserId,
+      productId: newItem.id,
+      quantity: 1,
+      dispensaryId: dispensary.id
     })
-    history.push('/orders');
+    // history.push('/orders');
   }
 
   const addToCart = (e) => {
