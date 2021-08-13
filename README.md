@@ -40,24 +40,24 @@ In browser:
   * Features a demo user log in for access to other functionality of the site without having to create a new user
 demo
 
-![user sign-in](https://media.giphy.com/media/YmvXRLHRNa3X7IhrxP/giphy.gif "User Sign In")
+![signup](https://user-images.githubusercontent.com/76984497/129398668-f497ab92-70fd-48cf-bbed-4fb782101c4e.gif "User Sign In")
 
 * Dispensary Index Page
   * Shows all dispensaries
 
-![Home Page](https://media.giphy.com/media/nCB3AXsT4i4FQ3kJRQ/giphy.gif "Home Page GIF")
+![home](https://user-images.githubusercontent.com/76984497/129398659-a0a84a3f-1a3c-4dd7-a37b-aae58e3b1e3b.gif "Home Page")
 
 * Dispensary Show Page
   * Shows a dispensary's inventory of products
   * Links to product show page
 
-![Dispensary Show Page](https://media.giphy.com/media/XG89bP6z8IiNeVXbsC/giphy.gif "Logo Title Text 2")
+![productshow](https://user-images.githubusercontent.com/76984497/129398670-c0e98ddf-643a-4bda-b0a1-03396c4def47.gif "Dispensary and Product Show Page")
 
 * Map
   * Shows the location of dispensaries
   * Clicking on a dispensary location links to the dispensary show page
 
-![Map](https://media.giphy.com/media/dZ83FvOhjHpz7xftO0/giphy.gif "Map GIF")
+![map](https://user-images.githubusercontent.com/76984497/129398484-c89b0bc1-b6c9-4536-a424-5f786e67a71c.gif "Map")
 
 
 CODE SAMPLE!!
