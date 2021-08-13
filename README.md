@@ -8,7 +8,7 @@ HashmMaps, a Weedmaps clone, is a online directory that allows users to browse, 
 * Ruby
 * Rails
 * React.js
-* * Redux.js
+* Redux.js
 * PostgresSQL
 * Webpack
 * Amazon AWS S3
@@ -36,21 +36,25 @@ In browser:
 7. `http://localhost:3000`
 
 ## `Features:`
-Demo User Sign In
-Features a demo user log in for access to other functionality of the site without having to create a new user
+* Demo User Sign In
+** Features a demo user log in for access to other functionality of the site without having to create a new user
 demo
 
-Product Index Page
+DEMO USER GIF HERE
 
-Shows all inventory of products
+* Dispensary Index Page
+** Shows all dispensaries
 
-Product Show Page
+HOME PAGE IMAGE
 
-Picture on index page links to the shoe show page
-Able to choose a size to add to the cart
-show
-  
-Shopping Cart Page
+* Dispensary Show Page
+** Shows a dispensary's inventory of products
 
-Shows all user's cart items
-Can adjust the quantity of each cart item and update the total price
+DISPENSARY SHOW PAGE IMAGE
+
+* Product Show Page
+** Picture on index page links to the product show page
+
+PRODUCT SHOW PAGE IMAGE
+
+CODE SAMPLE!!
