@@ -40,6 +40,9 @@ In browser:
   * Features a demo user log in for access to other functionality of the site without having to create a new user
 demo
 
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/76984497/129398668-f497ab92-70fd-48cf-bbed-4fb782101c4e.gif">
+</p>
 ![signup](https://user-images.githubusercontent.com/76984497/129398668-f497ab92-70fd-48cf-bbed-4fb782101c4e.gif "User Sign In")
 
 * Dispensary Index Page
