@@ -40,21 +40,24 @@ In browser:
   * Features a demo user log in for access to other functionality of the site without having to create a new user
 demo
 
-DEMO USER GIF HERE
+[user sign-in]: https://media.giphy.com/media/YmvXRLHRNa3X7IhrxP/giphy.gif "User Sign In"
 
 * Dispensary Index Page
   * Shows all dispensaries
 
-HOME PAGE IMAGE
+[Home Page]: https://media.giphy.com/media/nCB3AXsT4i4FQ3kJRQ/giphy.gif "Home Page GIF"
 
 * Dispensary Show Page
   * Shows a dispensary's inventory of products
+  * Links to product show page
 
-DISPENSARY SHOW PAGE IMAGE
+[Dispensary Show Page]: https://media.giphy.com/media/XG89bP6z8IiNeVXbsC/giphy.gif "Logo Title Text 2"
 
-* Product Show Page
-  * Picture on index page links to the product show page
+* Map
+  * Shows the location of dispensaries
+  * Clicking on a dispensary location links to the dispensary show page
 
-PRODUCT SHOW PAGE IMAGE
+[Map]: https://media.giphy.com/media/dZ83FvOhjHpz7xftO0/giphy.gif "Map GIF"
+
 
 CODE SAMPLE!!
