@@ -80,7 +80,7 @@ class SimpleMap extends Component {
           <AnyReactComponent
             lat={37.8047045}
             lng={-122.3307551}
-            text={<Link to="/dispensaries/13"><img alt="CBCB" title="CBCB" className="dispensary-icon" src="images/icons/dispensary.png" /></Link>}
+            text={<Link to="/dispensaries/12"><img alt="CBCB" title="CBCB" className="dispensary-icon" src="images/icons/dispensary.png" /></Link>}
           />
         </GoogleMapReact>
       </div>

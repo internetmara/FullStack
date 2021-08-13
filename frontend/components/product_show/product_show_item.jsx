@@ -12,7 +12,7 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
       quantity: 1,
       dispensaryId: dispensary.id
     })
-    // history.push('/orders');
+    history.push('/orders');
   }
 
   const addToCart = (e) => {
