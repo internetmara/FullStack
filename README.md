@@ -69,7 +69,7 @@ demo
 
 * Code to select product quantity 
 
-```
+```javascript
 class QuantitySelector extends React.Component {
   constructor(props) {
     super(props);
