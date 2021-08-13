@@ -64,7 +64,7 @@ demo
   * Clicking on a dispensary location links to the dispensary show page
 
 <p align="center">
-  <img width="700" src="https://user-images.githubusercontent.com/76984497/129398484-c89b0bc1-b6c9-4536-a424-5f786e67a71c.gif">
+  <img width="700" src="https://user-images.githubusercontent.com/76984497/129400455-13d6735b-139f-4e9e-9745-2b5986916a5e.gif">
 </p>
 
 * Code to select product quantity 
