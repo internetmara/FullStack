@@ -37,23 +37,23 @@ In browser:
 
 ## `Features:`
 * Demo User Sign In
-** Features a demo user log in for access to other functionality of the site without having to create a new user
+ * Features a demo user log in for access to other functionality of the site without having to create a new user
 demo
 
 DEMO USER GIF HERE
 
 * Dispensary Index Page
-* * Shows all dispensaries
+ * Shows all dispensaries
 
 HOME PAGE IMAGE
 
 * Dispensary Show Page
-* * Shows a dispensary's inventory of products
+ * Shows a dispensary's inventory of products
 
 DISPENSARY SHOW PAGE IMAGE
 
 * Product Show Page
-* * Picture on index page links to the product show page
+ * Picture on index page links to the product show page
 
 PRODUCT SHOW PAGE IMAGE
 
