@@ -14,20 +14,20 @@ class ProductsShow extends React.Component {
     }
   }
 
-  addToCart(e) {
-    e.preventDefault();
+  // addToCart(e) {
+  //   e.preventDefault();
 
-    if (this.props.currentUserId) {
-      let productIdArray = this.props.userOrders.map(item => (
-        item.product_id
-      ))
-      if (!productIdArray.includes(this.props.product.id)) {
-        this.addItem(this.props.product);
-      } else {
-        return (
-          alert('Product already in cart!')
-        )
-      }
+  //   if (this.props.currentUserId) {
+  //     let productIdArray = this.props.userOrders.map(item => (
+  //       item.product_id
+  //     ))
+  //     if (!productIdArray.includes(this.props.product.id)) {
+  //       this.addItem(this.props.product);
+  //     } else {
+  //       return (
+  //         alert('Product already in cart!')
+  //       )
+  //     }
 
 
     } else {

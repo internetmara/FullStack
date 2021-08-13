@@ -11,10 +11,12 @@ const mSTP = (state, { match }) => {
   const product = selectProduct(state.entities, productId);
   console.log(productId)
   const dispensaryId = product ? product.dispensaryId : "none"
+  const currentUserId = (state.session.id)
   return {
     productId,
     product,
-    dispensary: state.entities.dispensaries[dispensaryId]
+    dispensary: state.entities.dispensaries[dispensaryId],
+    currentUserId
   };
 };
 

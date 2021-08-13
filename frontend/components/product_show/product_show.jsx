@@ -27,7 +27,7 @@ class ProductShow extends React.Component {
     }
     return (
       <div className="product-show-page">
-        <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Save on weed today by buying before inflation goes up!</div >
+        <div className="order-banner"> <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Save on weed today by buying before inflation goes up!</div >
         <ProductShowItem key={`product${product.id}`} product={product} dispensary={dispensary} currentUserId={currentUserId} userOrders={userOrders} history={history} />
       </div>
     );

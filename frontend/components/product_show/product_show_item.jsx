@@ -3,26 +3,7 @@ import { Link } from 'react-router-dom';
 import QuantitySelector from '../quantity_selector/quantity_selector';
 
 export default ({ product, dispensary, currentUserId, userOrders, history }) => {
-
-  const addToCart = (e) => {
-    e.preventDefault();
-
-    if (currentUserId) {
-      let productIdArray = userOrders.map(item => (
-        item.product_id
-      ))
-      if (!productIdArray.includes(product.id)) {
-        this.addItem(product);
-      } else {
-        return (
-          alert('Product already in cart!')
-        )
-      }
-    } else {
-      history.push('/orders')
-    }
-  }
-
+  
   const addItem = (newItem, currentUserId) => {
     createOrder({
       user_id: currentUserId,
@@ -31,6 +12,26 @@ export default ({ product, dispensary, currentUserId, userOrders, history }) => 
     })
     history.push('/orders');
   }
+
+  const addToCart = (e) => {
+    e.preventDefault();
+    console.log(currentUserId)
+    if (currentUserId) {
+      let productIdArray = userOrders.map(item => (
+        item.product_id
+      ))
+      if (!productIdArray.includes(product.id)) {
+        addItem(product);
+      } else {
+        return (
+          alert('Product already in cart!')
+        )
+      }
+    } else {
+      // history.push('/orders')
+    }
+  }
+
 
   return (
     <div className="product-show">
