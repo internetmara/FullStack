@@ -6,7 +6,7 @@ class PopupCheckout extends React.Component {
     return (
       <div className='popup'>
         <div className='popup_inner'>
-          <div>
+          <div className='add-items-container'>
             <div className='popup-header'>Add Items to Order!</div>
             <div className='popup-close'><button className='popup-button' onClick={this.props.closePopup}><Link to='/dispensaries' className='continue-shopping'>Continue Shopping</Link></button></div>
           </div>

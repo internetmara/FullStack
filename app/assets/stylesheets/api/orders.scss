@@ -12,6 +12,7 @@
   justify-content: center;
   width: 90%;
   top: 150px;
+  max-width: 700px;
   margin: auto;
   margin-top: 10%;
 }
@@ -49,19 +50,15 @@
     padding-bottom: 0px;
 }
 
-.order-gender-color{
-    padding-bottom: 0px;
-}
-
-.order-item-gender{
-    padding-bottom: 0px;
-}
-
 .order-image{
     width: 150px;
     height: 150px;
 }
 
+.popup-close > * {
+    margin: auto;
+    align-items: center;
+}
 .size-order{
     padding-bottom: 15px;
     padding-right: 20px;
@@ -69,9 +66,7 @@
     color: rgba(130, 130, 130, 1);
 }
 
-
 .order-product-container{
-    // flex-wrap: wrap;
     width: 100%;
     display: inline-block;
     position: relative;
@@ -254,4 +249,124 @@
     display: flex;
     padding-right: 30px;
     width: 600px;
+}
+
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+}
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 40%;
+  bottom: 25%;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background: white;
+}
+
+.popup-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popup-gif{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.popup-button{
+    border:none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 40%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    align-self: center;
+    display:flex;
+    justify-content: center;
+}
+
+.popup-button:hover{
+    background-color: lightgrey;
+}
+
+.continue-shopping{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+}
+.add-items-container > * {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-items-container {
+    vertical-align: middle;
+    margin-top: 20%;
+}
+.mamba-inspire {
+    position: absolute;
+    top: 255px;
+    left: 235px;
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.kobeButton{
+    visibility: visible;
+    border:none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 1px;
+
 }
