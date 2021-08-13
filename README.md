@@ -1,18 +1,20 @@
-#HashMaps
+# HashMaps
 
-HashmMps, a Weedmaps clone, is a online directory that allows users to browse, purchase and locate cannabis dispensaries and products.
+HashmMaps, a Weedmaps clone, is a online directory that allows users to browse, purchase and locate cannabis dispensaries and products.
 
 [Live Demo](https://hash-maps.herokuapp.com/#/)
 
-`## Framework:`
-Ruby
-Rails
-React.js
-Redux.js
-PostgresSQL
-Webpack
-Amazon AWS S3
-Setup:
+## `Framework:`
+..* Ruby
+..* Rails
+..* React.js
+..* Redux.js
+..* PostgresSQL
+..* Webpack
+..* Amazon AWS S3
+
+
+## `Setup:`
 To run locally on computer:
 
 In terminal:
