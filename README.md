@@ -1,6 +1,6 @@
 # HashMaps
 
-HashmMaps, a Weedmaps clone, is a online directory that allows users to browse, purchase and locate cannabis dispensaries and products.
+HashMaps, a Weedmaps clone, is an online directory that allows users to browse, purchase and locate cannabis dispensaries and products.
 
 [Live Demo](https://hash-maps.herokuapp.com/#/)
 
