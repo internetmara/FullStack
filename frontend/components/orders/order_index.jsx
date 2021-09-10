@@ -83,7 +83,6 @@ class Orders extends React.Component {
   inOrder() {
     // const currentOrders = Object.values(this.props.orders);
     const currentOrders = [this.props.orders]; //should be an array of orders
-    // debugger
     return (
         <div className='orders-container'>
           <div className="order-product-container">
