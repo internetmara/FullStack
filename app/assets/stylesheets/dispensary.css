@@ -104,6 +104,8 @@
   width: 1300px;
   max-width: 90%;
   margin: auto;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .dispensary-img {

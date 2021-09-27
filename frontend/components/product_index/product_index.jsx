@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductIndexItem from './product_index_item';
+import Footer from '../footer/footer';
 
 class ProductIndex extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class ProductIndex extends React.Component {
             }
           </div>
         </ul>
+        <Footer/>
       </div>
     )
   }

@@ -85,12 +85,6 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
           </div>
         </div>
       </div>
-
-      <div className="product-footer">
-        <a href=""><img src="images/icons/Jellycopy.png"/></a>
-        <a href="https://www.linkedin.com/in/marafinkel/"><img src="images/icons/Linkedin.png"/></a>
-        <a href="https://github.com/internetmara"><img src="images/icons/GitHub.png"/></a>
-      </div>
     </div>
   );
 }

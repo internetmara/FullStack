@@ -1,5 +1,6 @@
 import React from 'react';
 import DispensariesShowItem from './dispensaries_show_item';
+import Footer from '../footer/footer';
 
 class DispensariesShow extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class DispensariesShow extends React.Component {
             }
           </div>
         </ul>
+        <Footer></Footer>
       </div>
     )
   }
