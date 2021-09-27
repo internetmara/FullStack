@@ -14,7 +14,7 @@ class DispensariesShow extends React.Component {
   render() {
     const { dispensaries } = this.props;
     return (
-      <div>
+      <div className="dispensaries-show">
         <ul>
           <br />
           <br />
@@ -28,7 +28,7 @@ class DispensariesShow extends React.Component {
             }
           </div>
         </ul>
-        <Footer></Footer>
+        <Footer/>
       </div>
     )
   }
