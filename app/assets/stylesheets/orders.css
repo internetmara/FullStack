@@ -1,11 +1,3 @@
-// Place all the styles related to the api/orders controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-// Place all the styles related to the api/orderItems controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .orders-container{
   display: flex;
   flex-direction: column;
@@ -28,9 +20,9 @@
     position: absolute;
     top: 50px;
     width: 600px;
-    // display: flex;
     align-items: center;
 }
+
 .size-order {
     position: relative;
     display: inline-block;
@@ -78,7 +70,6 @@
     border-top: 1px solid lightgray;
 }
 
-
 .order-info-wrapper{
     position: relative;
     left: 150px;
@@ -93,44 +84,6 @@
 
 .order-right{
     width: 300px;
-}
-
-.subtotal-title{
-    display: inline-block;
-}
-
-.subtotal-price{
-    display: inline-block;
-}
-
-.subtotal{
-    display: flex;
-    justify-content: space-between;
-}
-
-.estimated-shipping{
-    display: inline-block;
-}
-
-.shipping-price{
-    display: inline-block;
-}
-
-.shipping{
-    display: flex;
-    justify-content: space-between;
-}
-.estimated-tax{
-    display: inline-block;
-}
-
-.shipping-tax{
-    display: inline-block;
-}
-
-.tax{
-    display: flex;
-    justify-content: space-between;
 }
 
 .total-header{
@@ -208,18 +161,7 @@
   text-decoration: none;
 }
 
-.checkout-paypal{
-  color: white;
-  font-size: 13px;
-  border: 0px;
-  margin: 0px 0px 0px 8px;
-  background-color: #00a8a3;
-  border-radius: 9999px;
-  padding: 7px 16px;
-  text-decoration: none;
-}
-
-.checkoutButton:hover, .checkout-paypal:hover{
+.checkoutButton:hover {
     background-color: lightgray;
     color: black;
 }
@@ -229,12 +171,6 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
-}
-
-.kobe-gif{
-    position: absolute;
-    display: flex;
-    top: 70px;
 }
 
 .order-header1{
@@ -299,7 +235,7 @@
 .popup-button{
     border:none;
     border-radius: 50px;
-    background-color: black;
+    background-color: #00a8a3;
     color: white;
     padding: 20px;
     padding-right: 50px;
@@ -339,35 +275,4 @@
 .add-items-container {
     vertical-align: middle;
     margin-top: 20%;
-}
-.mamba-inspire {
-    position: absolute;
-    top: 255px;
-    left: 235px;
-    border-radius: 25px;
-    color: white;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-.kobeButton{
-    visibility: visible;
-    border:none;
-    border-radius: 50px;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 100%;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 1px;
-
 }
