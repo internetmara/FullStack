@@ -1,4 +1,3 @@
-import React from 'react';
 import DispensaryIndex from './dispensary_index';
 import { fetchDispensaries } from '../../actions/dispensary_actions';
 import { connect } from 'react-redux';

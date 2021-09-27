@@ -1,6 +1,7 @@
 import React from 'react';
 import DispensaryShowItem from './dispensary_show_item';
 import ProductIndexContainer from './../product_index/product_index_container'
+import Footer from './../footer/footer'
 
 class DispensaryShow extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class DispensaryShow extends React.Component {
         <div className="order-banner" > <i className="fa fa-shopping-cart" />&nbsp;&nbsp; Select a product to start your order!</div >
         <DispensaryShowItem key={`dispensary${dispensary.id}`} dispensary={dispensary} />
         <ProductIndexContainer />
+        <Footer/>
       </div>
     );
   };

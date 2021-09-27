@@ -37,6 +37,10 @@
   font-size: 25px;
 }
 
+.featured-products-container {
+  padding-bottom: 10px;
+}
+
 .products {
   display: flex;
   align-items: center;
@@ -47,6 +51,7 @@
   flex-wrap: wrap;
   max-width: 90%;
   margin: auto;
+
 }
 
 .product-index-category {

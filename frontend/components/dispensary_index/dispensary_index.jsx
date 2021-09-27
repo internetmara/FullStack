@@ -13,7 +13,7 @@ class DispensaryIndex extends React.Component {
   render() {
     const { dispensaries } = this.props;
     return (
-      <div>
+      <div className="dispensary-index-container">
         <ul>
           <br/>
           <br/>

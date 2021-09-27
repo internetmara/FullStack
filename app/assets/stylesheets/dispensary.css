@@ -132,3 +132,11 @@ li > * {
   font-size: 2vmin;
   margin-top: 5px;
 }
+
+.product-index-container {
+  position: relative;
+}
+
+.dispensary-index-container {
+  margin-bottom: 20px;
+}

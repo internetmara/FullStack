@@ -16,7 +16,7 @@ class ProductIndex extends React.Component {
   render() {
     const { products } = this.props;
     return (
-      <div>
+      <div className="featured-products-container">
         <ul>
           <br/>
           <h2 className="featured-products">Featured products</h2>

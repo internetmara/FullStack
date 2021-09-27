@@ -1,0 +1,32 @@
+.product-footer {
+  display: flex;
+  border-top: .0625rem solid rgb(230, 229, 229);
+  color: rgb(96, 100, 111);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;    color: rgb(96, 100, 111);
+  padding: 2rem 1rem;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.socials {
+  height: 30px;
+  border-radius: 20px;
+  justify-content: center;
+  border: 1px solid rgb(62, 62, 62);
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
