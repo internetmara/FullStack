@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PopupCheckout from './popup_checkout';
-import PopupVenmo from './popup_venmo';
 import PopupEmptyCheckout from './popup_emptycheckout';
 
 class Orders extends React.Component {
@@ -10,7 +9,6 @@ class Orders extends React.Component {
 
     this.state = {
       showPopupCheckout: false,
-      showPopupVenmo: false,
       showPopupEmptyCheckout: false
     }
 
@@ -21,7 +19,6 @@ class Orders extends React.Component {
     this.sumTotal = this.sumTotal.bind(this);
 
     this.togglePopUpCheckout = this.togglePopUpCheckout.bind(this);
-    this.togglePopUpVenmo = this.togglePopUpVenmo.bind(this);
     this.togglePopUpEmptyCheckout = this.togglePopUpEmptyCheckout.bind(this);
 
     this.clearOrder = this.clearOrder.bind(this);
@@ -30,12 +27,6 @@ class Orders extends React.Component {
   togglePopUpCheckout() {
     this.setState({
       showPopupCheckout: !this.state.showPopupCheckout
-    })
-  }
-
-  togglePopUpVenmo() {
-    this.setState({
-      showPopupVenmo: !this.state.showPopupVenmo
     })
   }
 
@@ -122,11 +113,8 @@ class Orders extends React.Component {
           </div>
 
           <div className='checkout'><button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button></div>
-          <div className='paypal'><button onClick={this.togglePopUpVenmo} className='checkout-paypal'><i className='fab fa-paypal fa-3x' style={{ color: 'blue' }}></i></button></div>
           {this.state.showPopupCheckout ?
             <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}
-          {this.state.showPopupVenmo ?
-            <PopupVenmo closePopup={this.togglePopUpVenmo} /> : null}
         </div>
       </div>
     )
@@ -148,12 +136,9 @@ class Orders extends React.Component {
           </div>
           <div className="order-buttons">
             <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
-            <div className='paypal'><button onClick={this.togglePopUpVenmo} className='checkout-paypal'>Venmo!</button></div>
           </div>
           {this.state.showPopupEmptyCheckout ?
             <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
-          {this.state.showPopupVenmo ?
-            <PopupVenmo closePopup={this.togglePopUpVenmo} /> : null}
         </div>
       </div>
     )
