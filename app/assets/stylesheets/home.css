@@ -16,4 +16,8 @@
   font-size: 14px;
 }
 
+.navbar > * {
+  color:rgb(64, 64, 64);
+}
+
 
