@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default ({ }) => {
   return (
     <div className="navbar">
-      <a href="https://weedmaps.com/">Order online</a>
+      <Link to="/orders">Order online</Link>
       <Link to="/dispensaries">Dispensaries</Link>
       <Link to="/products">Products</Link>
       <Link to="/maps">Maps</Link>
