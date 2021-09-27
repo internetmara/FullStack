@@ -85,10 +85,6 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
           </div>
         </div>
       </div>
-
-      <div className="product-footer">
-        <h1>Legalize & Decriminalize it! End the failed drug war! Expungements now! 🙅🚔⛔️</h1>
-      </div>
     </div>
   );
 }
