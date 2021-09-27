@@ -9,18 +9,16 @@ export default ({ }) => {
           &nbsp;&nbsp;&nbsp;&nbsp;HashMaps
         </div>
         <div id="slide-2">
-          420 lol
+          Medical
         </div>
         <div id="slide-3">
-          &nbsp;&nbsp;&nbsp;buy weed!!!!!
+          &nbsp;&nbsp;&nbsp;Cannabis!
         </div>
         <div id="slide-4">
-          &nbsp;&nbsp;vape nation
+          &nbsp;&nbsp;Vaporizers
         </div>
         <div id="slide-5">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break stuff
-          <br />
-          steal things!
+          420
         </div>
       </div>
     </div>

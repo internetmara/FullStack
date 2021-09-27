@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PopupCheckout from './popup_checkout';
 import PopupEmptyCheckout from './popup_emptycheckout';
+import Footer from '../footer/footer';
 
 class Orders extends React.Component {
   constructor(props) {
@@ -122,24 +123,27 @@ class Orders extends React.Component {
 
   emptyOrder() {
     return (
-      <div className='orders-container'>
-        <div className='Order-left1'>
-          <div className='Order-header1'>Your Order Is Empty</div>
-        </div>
-
-        <div className='Order-right'>
-          <div className='summary'>Summary</div>
-
-          <div className='total'>
-            <div className='total-header'>Total</div>
-            <div className='total-price'>$0.00</div>
+      <div>
+        <div className='orders-container'>
+          <div className='Order-left1'>
+            <div className='Order-header1'>Your Order Is Empty</div>
           </div>
-          <div className="order-buttons">
-            <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
+
+          <div className='Order-right'>
+            <div className='summary'>Summary</div>
+
+            <div className='total'>
+              <div className='total-header'>Total</div>
+              <div className='total-price'>$0.00</div>
+            </div>
+            <div className="order-buttons">
+              <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
+            </div>
+            {this.state.showPopupEmptyCheckout ?
+              <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
           </div>
-          {this.state.showPopupEmptyCheckout ?
-            <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
         </div>
+        <Footer/>
       </div>
     )
   }
