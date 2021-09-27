@@ -3,6 +3,16 @@
   -webkit-box-align: center;
   align-items: center;
   white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-size: 13px;
+  color:rgb(96, 100, 111)
+}
+
+.login-signup > * {
+  color:rgb(96, 100, 111);
 }
 
 .top-bar {
@@ -95,17 +105,8 @@
   width: 100%;
 }
 
-.login-signup {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  font-size: 13px;
-  color:rgb(96, 100, 111)
-}
-
 .sign-up-button, .logout-header-button {
-  color: white;
+  color: whitesmoke;
   font-size: 13px;
   border: 0px;
   margin: 0px 0px 0px 8px;
@@ -113,6 +114,10 @@
   border-radius: 9999px;
   padding: 7px 16px;
   text-decoration: none;
+}
+
+.sign-up-button > * {
+  color: whitesmoke;
 }
 
 .sign-up-button:hover, .logout-header-button:hover {

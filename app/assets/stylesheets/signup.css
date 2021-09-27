@@ -51,6 +51,10 @@
   color: #00a8a3;
 }
 
+.change-form > * {
+  color: #00a8a3;
+}
+
 .session-submit {
   font-family: 'Open Sans', sans-serif;
   border: none;
