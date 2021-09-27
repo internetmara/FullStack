@@ -202,16 +202,20 @@
 .product-footer {
   display: flex;
   bottom: 0px;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
+  align-items: center;
+  justify-content: space-around;
   color: rgb(96, 100, 111);
-  padding: 1.5rem 1rem;
-  margin-bottom: 0px;
-  font-weight: 400;
-  margin: 0px;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  padding: 1rem 1rem;
   border-top: 0.0625rem solid rgb(230, 229, 229);
   position: fixed;
   width: 100%;
+}
+
+.product-footer > a  > img {
+  width: 30px;
+  height: auto;
+  border: 2px solid rgb(62, 62, 62);
+  border-radius: 20px;
 }
