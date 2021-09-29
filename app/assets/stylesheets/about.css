@@ -1,0 +1,14 @@
+.about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 200px;
+  color: rgb(107, 106, 106);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-text > a {
+  color:rgb(107, 106, 106);
+  text-decoration: underline;
+}
