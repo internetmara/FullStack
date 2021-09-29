@@ -13,6 +13,7 @@ import NavBar from "./home/nav-bar";
 import ProductIndexContainer from "./product_index/product_index_container";
 import SimpleMap from "./map/map";
 import OrderIndexContainer from '../components/orders/order_index_container';
+import About from "./about/about";
 
 const App = () => (
   <div>
@@ -26,8 +27,9 @@ const App = () => (
       <Route exact path="/dispensaries" component={DispensariesShowContainer} />
       <Route exact path="/products/:productId" component={ProductShowContainer} />
       <Route exact path="/products" component={ProductIndexContainer} />
-      <Route exact path="/maps" component={ SimpleMap} />
-      <Route exact path='/orders' component={OrderIndexContainer} />
+      <Route exact path="/maps" component={ SimpleMap } />
+      <Route exact path='/orders' component={ OrderIndexContainer } />
+      <Route exact path="/about" component={ About } />
     </Switch>
   </div>
 );

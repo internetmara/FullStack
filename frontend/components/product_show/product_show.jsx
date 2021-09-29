@@ -43,7 +43,7 @@ class ProductShow extends React.Component {
   
   componentDidMount() {
     this.props.fetchProduct(this.props.productId)
-      .then(() => this.props.fetchDispensary(this.props.dispensaryId));
+      // .then(() => this.props.fetchDispensary(this.props.dispensaryId));
     this.props.fetchOrders();
     this.props.fetchOrder();
   }
