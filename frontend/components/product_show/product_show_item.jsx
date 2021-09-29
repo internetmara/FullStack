@@ -3,38 +3,8 @@ import { Link } from 'react-router-dom';
 import QuantitySelector from '../quantity_selector/quantity_selector';
 
 
-export default ({ product, dispensary, currentUserId, userOrders, history, createOrder }) => {
+export default ({ product, dispensary }) => {
   
-  const addItem = (newItem) => {
-    createOrder({
-      userId: currentUserId,
-      productId: newItem.id,
-      quantity: 1,
-      dispensaryId: dispensary.id
-    })
-    history.push('/orders');
-  }
-
-  const addToCart = (e) => {
-    e.preventDefault();
-    console.log(currentUserId)
-    if (currentUserId) {
-      let productIdArray = userOrders.map(item => (
-        item.product_id
-      ))
-      if (!productIdArray.includes(product.id)) {
-        addItem(product);
-      } else {
-        return (
-          alert('Product already in cart!')
-        )
-      }
-    } else {
-      // history.push('/orders')
-    }
-  }
-
-
   return (
     <div className="product-show">
       <div className="go-back">
@@ -80,7 +50,7 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
             </div>
 
             <div className="button-box">
-              <button className="add-to-cart" onClick={addToCart}>Add to cart</button>
+              <button className="add-to-cart" onClick={this.addToCart}>Add to cart</button>
             </div>
           </div>
         </div>

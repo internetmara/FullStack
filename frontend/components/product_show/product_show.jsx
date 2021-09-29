@@ -6,12 +6,46 @@ import Footer from './../footer/footer'
 class ProductShow extends React.Component {
   constructor(props) {
     super(props);
+
+    this.addToCart = this.addToCart.bind(this);
+    this.addItem = this.addItem.bind(this);
   }
 
+  addItem = (newItem) => {
+    createOrder({
+      userId: currentUserId,
+      productId: newItem.id,
+      quantity: 1,
+      dispensaryId: dispensary.id
+    })
+    history.push('/orders');
+  }
+
+  addToCart = (e) => {
+    e.preventDefault();
+    console.log(currentUserId)
+    if (currentUserId) {
+      let productIdArray = userOrders.map(item => (
+        item.product_id
+      ))
+      if (!productIdArray.includes(product.id)) {
+        addItem(product);
+      } else {
+        return (
+          alert('Product already in cart!')
+        )
+      }
+    } else {
+      // history.push('/orders')
+    }
+  }
+
+  
   componentDidMount() {
     this.props.fetchProduct(this.props.productId)
-      .then(() => this.props.fetchDispensary(this.props.product.dispensaryId));
+      .then(() => this.props.fetchDispensary(this.props.dispensaryId));
     this.props.fetchOrders();
+    this.props.fetchOrder();
   }
 
   componentDidUpdate(prevProps) {
