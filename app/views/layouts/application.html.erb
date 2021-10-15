@@ -20,7 +20,6 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
     </style>
-    <script type="text/javascript">
   window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
 </script>
     </div>
@@ -30,6 +29,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+  <meta name="description" content="HashMaps" />
+  <meta name="title" property="og:title" content="HashMaps" />
+  <meta property="og:type" content="Website" />
+  <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51593263085_9f98b91dcd_k.jpg" alt="hashmaps" />
+  <meta name="description" property="og:description" content="HashMaps, a Weedmaps clone, is an online directory that allows users to browse, purchase and locate cannabis dispensaries and products." />
+  <meta name="author" content="Mara Finkel" />
+
   </head>
 
   <body>
