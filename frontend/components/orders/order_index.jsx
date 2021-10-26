@@ -80,7 +80,6 @@ class Orders extends React.Component {
   }
 
   inOrder() {
-    console.log(this.props)
     const currentOrders = Object.values(this.props.orders);
     // return (
     //   null
@@ -89,43 +88,46 @@ class Orders extends React.Component {
     //   // )}
     // )
     let orderIds = Object.keys(this.props.orders);
-    let fullProducts = orderIds.map(Id => {
-      let productId = this.props.orders[Id].product_id;
-      debugger
-      return (
-        <div key={Id} className='order-product-container'>
-          <div className='order-image-wrapper'>
-            <Link to={`/products/${productId}`}><img className='order-image' src={this.props.products[productId].photoUrl ? this.props.products[productId].photoUrl : null} ></img></Link>
-          </div>
-            <div className='order-product-price'>
-              <div className='order--name'>{this.props.products[productId].name}</div>
-              <div className='order--price'>${this.sumTotal(Id, productId)}.00</div>
-
-            <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button>
-          </div>
-        </div>
-      )
-    })
+    console.log(currentOrders)
     return (
-      <div className='order-s-container'>
-        <div className='order-left'>
-          <div className='order-header'>Order</div>
-          <div className='order-products'>{fullProducts}</div>
-        </div>
-
-        <div className='order-right'>
-          <div className='summary'>Summary</div>
-          <div className='total'>
-            <div className='total-header'>Total</div>
-            <div className='total-price'>${this.sumOrderTotal()}.00</div>
-          </div>
-
-          <div className='checkout'><button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button></div>
-          {this.state.showPopupCheckout ?
-            <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}
-        </div>
-      </div>
+      null
     )
+    // let fullProducts = orderIds.map(Id => {
+    //   let productId = this.props.orders[Id].product_id;
+    //   return (
+    //     <div key={Id} className='order-product-container'>
+    //       <div className='order-image-wrapper'>
+    //         {/* <Link to={`/products/${productId}`}><img className='order-image' src={this.props.products[productId].photoUrl ? this.props.products[productId].photoUrl : null} ></img></Link> */}
+    //       </div>
+    //         <div className='order-product-price'>
+    //           <div className='order--name'>{this.props.products[productId].name}</div>
+    //           <div className='order--price'>${this.sumTotal(Id, productId)}.00</div>
+
+    //         <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button>
+    //       </div>
+    //     </div>
+    //   )
+    // })
+    // return (
+    //   <div className='order-s-container'>
+    //     <div className='order-left'>
+    //       <div className='order-header'>Order</div>
+    //       <div className='order-products'>{fullProducts}</div>
+    //     </div>
+
+    //     <div className='order-right'>
+    //       <div className='summary'>Summary</div>
+    //       <div className='total'>
+    //         <div className='total-header'>Total</div>
+    //         <div className='total-price'>${this.sumOrderTotal()}.00</div>
+    //       </div>
+
+    //       <div className='checkout'><button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button></div>
+    //       {this.state.showPopupCheckout ?
+    //         <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}
+    //     </div>
+    //   </div>
+    // )
   }
 
   emptyOrder() {

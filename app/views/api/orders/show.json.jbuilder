@@ -1,1 +1,1 @@
-json.extract! @order, :id, :user_id, :dispensary_id, :product_id, :purchase_num, :quantity
+json.extract! @order, :id, :quantity, :prod_name, :dispo_name, :url, :dispo_id, :prod_id

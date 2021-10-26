@@ -7,11 +7,11 @@ json.orders do
 end
 
 
-json.products do 
-    @orders.each do |order|
-        json.set! order.product.id do 
-            json.extract! order.product, :id, :dispensary_id, :name, :brand, :price, :category, :size, :url
-            json.photoUrl url_for(order.product.photo)
-        end
-    end
-end
+# json.products do 
+#     @orders.each do |order|
+#         json.set! order.product.id do 
+#             json.extract! order.product, :id, :dispensary_id, :name, :brand, :price, :category, :size, :url
+#             json.photoUrl url_for(order.product.photo)
+#         end
+#     end
+# end

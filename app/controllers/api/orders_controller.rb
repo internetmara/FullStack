@@ -13,10 +13,14 @@ before_action :require_logged_in, only: [:create]
 
   def show 
     order_selected = Order.find(params[:id])
-    @order = {}
-    @order['prod_name'] = order_selected.product.name
-    @order['dispo_name'] = order_selected.dispensary.name
-    @order['quantity'] = order_selected.product.quantity
+      @order = {}
+      @order[:id] = order_selected.id
+      @order[:prod_name] = order_selected.product.name
+      @order[:dispo_name] = order_selected.dispensary.name
+      @order[:quantity] = order_selected.quantity
+      @order[:url] = order_selected.product.url
+      @order[:dispo_id] = order_selected.dispensary.id
+      @order[:prod_id] = order_selected.product.id
     render :show
   end
 
@@ -24,9 +28,17 @@ before_action :require_logged_in, only: [:create]
     @order = Order.new(order_params)
   
     if @order.save 
-        render :show 
+      @order = {}
+      @order[:id] = new_order.id
+      @order[:prod_name] = new_order.product.name
+      @order[:dispo_name] = new_order.dispensary.name
+      @order[:quantity] = new_order.quantity
+      @order[:url] = new_order.product.url
+      @order[:dispo_id] = new_order.dispensary.id
+      @order[:prod_id] = new_order.product.id
+      render :show 
     else 
-        render json: @order.errors.full_messages, status: 422
+      render json: @order.errors.full_messages, status: 422
     end
   end
 
