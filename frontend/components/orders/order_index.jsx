@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PopupCheckout from './popup_checkout';
 import PopupEmptyCheckout from './popup_emptycheckout';
 import Footer from '../footer/footer';
+import OrderIndexItem from './order_index_item'
 
 class Orders extends React.Component {
   constructor(props) {
@@ -83,7 +84,15 @@ class Orders extends React.Component {
     const currentOrders = Object.values(this.props.orders);
     return (
       currentOrders.map(order =>
-        <h1>{order.prodName}</h1>
+        <OrderIndexItem
+        key={order.id}
+        prod_name={order.prod_name}
+        dispo_name={order.dispo_name}
+        quantity={order.quantity}
+        url={order.url}
+        dispo_id={order.dispo_id}
+        prod_id={order.prod_id}
+        />
       )
     )
     // console.log(currentOrders)
