@@ -83,9 +83,8 @@ class Orders extends React.Component {
   inOrder() {
     const currentOrders = Object.values(this.props.orders);
     return (
-        <div className='order-s-container'>
-          <div className='order-left'>
-            <div className='order-header'>Order</div>
+        <div className='orders-container'>
+          <div className="order-product-container">
           {currentOrders.map(order =>
             <OrderIndexItem
               key={order.id}
@@ -96,8 +95,7 @@ class Orders extends React.Component {
               dispo_id={order.dispo_id}
               prod_id={order.prod_id}
               />)}
-          </div>
-
+              </div>
           <div className='order-right'>
             <div className='summary'>Summary</div>
             <div className='total'>
@@ -113,7 +111,7 @@ class Orders extends React.Component {
           {this.state.showPopupCheckout ?
             <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}
 
-        <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button>
+        {/* <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button> */}
       </div>
     )
   }
@@ -122,11 +120,11 @@ class Orders extends React.Component {
     return (
       <div>
         <div className='orders-container'>
-          <div className='Order-left1'>
-            <div className='Order-header1'>Your Order Is Empty</div>
+          <div className='order-left1'>
+            <div className='order-header1'>Your Order Is Empty</div>
           </div>
 
-          <div className='Order-right'>
+          <div className='order-right'>
             <div className='summary'>Summary</div>
 
             <div className='total'>
