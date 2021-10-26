@@ -8,7 +8,7 @@ const orderReducer = (state={}, action) => {
         case RECEIVE_ORDERS:
             return Object.assign({}, state, action.payload.orders);
         case RECEIVE_ORDER:
-            return Object.assign({}, state, {[action.order.id]: action.order})
+            return Object.assign({}, state, {[action.order.id]:action.order})
         case DELETE_ORDER:
             let newState = Object.assign({}, state);
             delete newState[action.order.id];

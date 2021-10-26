@@ -12,7 +12,11 @@ before_action :require_logged_in, only: [:create]
   end
 
   def show 
-    @order = Order.find(params[:id])
+    order_selected = Order.find(params[:id])
+    @order = {}
+    @order['prod_name'] = order_selected.product.name
+    @order['dispo_name'] = order_selected.dispensary.name
+    @order['quantity'] = order_selected.product.quantity
     render :show
   end
 

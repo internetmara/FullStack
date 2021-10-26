@@ -6,10 +6,10 @@ import QuantitySelector from '../quantity_selector/quantity_selector';
 export default ({ product, dispensary, currentUserId, userOrders, history, createOrder }) => {
   const addItem = (newItem) => {
     createOrder({
-      userId: currentUserId,
-      productId: newItem.id,
+      user_id: currentUserId,
+      product_id: newItem.id,
       quantity: 1,
-      dispensaryId: dispensary.id
+      dispensary_id: dispensary.id
     })
     history.push('/orders');
   }

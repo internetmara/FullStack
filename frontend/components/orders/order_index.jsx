@@ -80,14 +80,22 @@ class Orders extends React.Component {
   }
 
   inOrder() {
-    let orderIds = Object.keys(this.props.orders);//these are order  ids 
+    console.log(this.props)
+    const currentOrders = Object.values(this.props.orders);
+    // return (
+    //   null
+    //   // {currentOrders.map(order =>
+    //   //   <h1></h1>
+    //   // )}
+    // )
+    let orderIds = Object.keys(this.props.orders);
     let fullProducts = orderIds.map(Id => {
       let productId = this.props.orders[Id].product_id;
-
+      debugger
       return (
         <div key={Id} className='order-product-container'>
           <div className='order-image-wrapper'>
-            <Link to={`/products/${productId}`}><img className='order-image' src={this.props.products[productId].photoUrls ? this.props.products[productId].photoUrls[0] : null} ></img></Link>
+            <Link to={`/products/${productId}`}><img className='order-image' src={this.props.products[productId].photoUrl ? this.props.products[productId].photoUrl : null} ></img></Link>
           </div>
             <div className='order-product-price'>
               <div className='order--name'>{this.props.products[productId].name}</div>
@@ -148,7 +156,7 @@ class Orders extends React.Component {
   }
 
   render() {
-    return (this.props.userOrders.length === 0 || this.props.currentUserId === null) ? this.emptyOrder() : this.inOrder();
+    return (this.props.orders.length === 0 || this.props.currentUserId === null) ? this.emptyOrder() : this.inOrder();
   }
 }
 
