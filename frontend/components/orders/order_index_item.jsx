@@ -16,3 +16,5 @@ class OrderIndexItem extends React.Component {
     )
   }
 }
+
+export default OrderIndexItem;
