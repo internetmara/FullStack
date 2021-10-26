@@ -3,11 +3,24 @@ before_action :require_logged_in, only: [:create]
 
   def index 
     if current_user 
-        @orders = current_user.orders
+        orders_found = current_user.orders
     else
         @orders = []
     end 
-
+    if orders_found
+      @orders = []
+      orders_found.each do |order|
+        @order = {}
+        @order[:id] = order.id
+        @order[:prod_name] = order.product.name
+        @order[:dispo_name] = order.dispensary.name
+        @order[:quantity] = order.quantity
+        @order[:url] = order.product.url
+        @order[:dispo_id] = order.dispensary.id
+        @order[:prod_id] = order.product.id
+        @orders.push(@order)
+      end
+    end
     render :index
   end
 
@@ -28,6 +41,7 @@ before_action :require_logged_in, only: [:create]
     @order = Order.new(order_params)
   
     if @order.save 
+      new_order = @order
       @order = {}
       @order[:id] = new_order.id
       @order[:prod_name] = new_order.product.name

@@ -1,8 +1,8 @@
 json.orders do 
     @orders.each do |order|
-        json.set! order.id do 
-            json.extract! order, :user_id, :dispensary_id, :product_id, :purchase_num, :quantity
-        end
+        # json.set! order.id do 
+            json.extract! order, :dispo_id, :prod_id, :quantity, :id, :url, :dispo_name, :prod_name
+        # end
     end
 end
 

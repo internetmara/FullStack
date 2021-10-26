@@ -81,17 +81,15 @@ class Orders extends React.Component {
 
   inOrder() {
     const currentOrders = Object.values(this.props.orders);
+    return (
+      currentOrders.map(order =>
+        <h1>{order.prodName}</h1>
+      )
+    )
+    // console.log(currentOrders)
     // return (
     //   null
-    //   // {currentOrders.map(order =>
-    //   //   <h1></h1>
-    //   // )}
     // )
-    let orderIds = Object.keys(this.props.orders);
-    console.log(currentOrders)
-    return (
-      null
-    )
     // let fullProducts = orderIds.map(Id => {
     //   let productId = this.props.orders[Id].product_id;
     //   return (
