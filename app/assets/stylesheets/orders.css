@@ -111,7 +111,7 @@
 }
 
 .order-item-price{
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     color: rgba(130, 130, 130, 1);
 }
 
@@ -120,7 +120,7 @@
     border: none;
     background-color: white;
     text-decoration: underline;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     color: rgba(130, 130, 130, 1);
     cursor: pointer;
     font-size: 15px;
@@ -128,7 +128,7 @@
 }
 
 .summary{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 15px;
