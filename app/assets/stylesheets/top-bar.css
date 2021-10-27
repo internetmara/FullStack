@@ -3,7 +3,7 @@
   -webkit-box-align: center;
   align-items: center;
   white-space: nowrap;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-weight: 700;
   font-size: 0.8125rem;
   font-weight: 700;
@@ -91,7 +91,7 @@
 }
 
 .order-banner {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 14px;
   background-color: rgb(96, 100, 111);
   color: rgb(255, 255, 255);
