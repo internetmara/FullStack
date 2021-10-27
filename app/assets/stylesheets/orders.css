@@ -44,8 +44,7 @@
 }
 
 .url{
-    /* border: 1px solid black; */
-    width: 150px;
+    /* width: 150px; */
     height: 150px;
 }
 
@@ -201,7 +200,7 @@
   margin: auto;
   background-color: rgba(0,0,0, 0.5);
 }
-.popup_inner {
+.popup-inner {
   position: absolute;
   left: 25%;
   right: 25%;
@@ -224,6 +223,23 @@
     letter-spacing: 1px;
     font-size: 30px;
     font-weight: 600;
+}
+
+.popup-header-checkout{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color:rgba(130, 130, 130, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 90%; */
 }
 
 .popup-gif{
