@@ -16,7 +16,6 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
 
   const addToCart = (e) => {
     e.preventDefault();
-    console.log(currentUserId)
     if (currentUserId) {
       let productIdArray = userOrders.map(item => (
         item.product_id
@@ -29,7 +28,10 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
         )
       }
     } else {
-      // history.push('/orders')
+      return (
+          alert('Please log in before adding items to your cart!')
+          (window.location.assign('/#/login'))
+        )
     }
   }
   return (

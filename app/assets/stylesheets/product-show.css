@@ -129,7 +129,7 @@
   align-items: baseline;
 }
 
-.quantity {
+.quantity, .prod_name, .dispo_name {
   margin-bottom: 0.5rem;
   color: rgb(37, 41, 53);
   font-size: 0.875rem;
