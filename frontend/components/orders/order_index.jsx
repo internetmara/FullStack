@@ -89,7 +89,7 @@ class Orders extends React.Component {
             <OrderIndexItem
               key={order.id}
               dispo_name={order.dispo_name}
-              prod_name={prod_name}
+              prod_name={order.prod_name}
               quantity={order.quantity}
               url={order.url}
               dispo_id={order.dispo_id}
