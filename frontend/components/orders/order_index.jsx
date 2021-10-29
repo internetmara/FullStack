@@ -18,7 +18,7 @@ class Orders extends React.Component {
     this.emptyOrder = this.emptyOrder.bind(this);
     this.handleChange = this.handleChange.bind(this);
     // this.sumOrderTotal = this.sumOrderTotal.bind(this);
-    // this.sumTotal = this.sumTotal.bind(this);
+    this.sumTotal = this.sumTotal.bind(this);
     this.togglePopUpCheckout = this.togglePopUpCheckout.bind(this);
     this.togglePopUpEmptyCheckout = this.togglePopUpEmptyCheckout.bind(this);
 
