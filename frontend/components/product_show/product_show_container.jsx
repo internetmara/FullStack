@@ -10,7 +10,6 @@ const mSTP = (state, { match }) => {
 
   const productId = parseInt(match.params.productId);
   const product = selectProduct(state.entities, productId);
-  console.log(productId)
   const dispensaryId = product ? product.dispensaryId : "none"
   const currentUserId = (state.session.id)
   const userOrders = Object.values(state.entities.orders)

@@ -26,7 +26,6 @@ class ProductShow extends React.Component {
 
   render() {
     const { product, dispensary, currentUserId, userOrders, history, newItem, createOrder } = this.props;
-    console.log(this.props)
     if ((product === undefined) || (dispensary === undefined)) {
       return null
     }
