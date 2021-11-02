@@ -81,21 +81,23 @@ class Orders extends React.Component {
   }
 
   inOrder() {
-    const currentOrders = Object.values(this.props.orders);
-    console.log(currentOrders)
+    // const currentOrders = Object.values(this.props.orders);
+    const currentOrders = [this.props.orders]; //should be an array of orders
+    // debugger
     return (
         <div className='orders-container'>
           <div className="order-product-container">
           {currentOrders.map(order =>
             <OrderIndexItem
               key={order.id}
-              dispo_name={order.dispo_name}
-              prod_name={order.prod_name}
+              dispo_name={order.dispoName}
+              prod_name={order.prodName}
               quantity={order.quantity}
               url={order.url}
-              dispo_id={order.dispo_id}
-              prod_id={order.prod_id}
-              />)}
+              dispo_id={order.dispoId}
+              prod_id={order.prodId}
+              />
+              )}
               </div>
           <div className='order-right'>
             <div className='summary'>Summary</div>

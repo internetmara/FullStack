@@ -7,9 +7,9 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
   const addItem = (newItem) => {
     createOrder({
       user_id: currentUserId,
-      product_id: newItem.id,
-      quantity: 1,
-      dispensary_id: dispensary.id
+      product_id: newItem.product_id,
+      quantity: newItem.quantity,
+      dispensary_id: newItem.dispensary_id
     })
     history.push('/orders');
   }
@@ -17,11 +17,19 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
   const addToCart = (e) => {
     e.preventDefault();
     if (currentUserId) {
-      let productIdArray = userOrders.map(item => (
-        item.product_id
-      ))
-      if (!productIdArray.includes(product.id)) {
-        addItem(product);
+      let productIdArray = [];
+      let item = {
+        user_id: currentUserId,
+        product_id: userOrders.prodId,
+        quantity: userOrders.quantity,
+        dispensary_id: userOrders.dispoId
+      }
+      // let productIdArray = userOrders.map(item => (
+      //   item.product_id
+      // ))
+      if (!productIdArray.includes(item.product_id)) {
+        productIdArray.push(item.product_id)
+        addItem(item);
       } else {
         return (
           alert('Product already in cart!')
