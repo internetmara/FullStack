@@ -47,6 +47,7 @@
     color: rgb(96, 100, 111);
     margin-left: 1rem;
 }
+
 .prod_pic, .dispo_pic{
     width: 96px;
     height: 96px;
@@ -70,11 +71,6 @@
     width: 66.6667%;
     padding-left: 16px;
     padding-right: 16px;
-}
-
-.popup-close > * {
-    margin: auto;
-    align-items: center;
 }
 
 .delete-button{
@@ -118,11 +114,6 @@
     display: flex;
     position: relative;
     width: 100%;
-}
-
-.continue-shopping{
-    cursor: pointer;
-    color: whitesmoke;
 }
 
 .add-items-container > * {

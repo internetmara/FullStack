@@ -19,7 +19,7 @@
   right: 25%;
   top: 40%;
   bottom: 25%;
-  height: 400px;
+  height: 500px;
   width: 600px;
   margin: auto;
   border: 1px solid lightgrey;
@@ -74,4 +74,33 @@
     align-self: center;
     display:flex;
     justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    margin: auto;
+}
+
+.popup-button > * ::after {
+  text-decoration: none;
+}
+
+.popup-checkout-button > * {
+    margin: auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.continue-shopping {
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+    align-items: center;
+}
+
+.continue-shopping::after {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup-close {
+  margin: 5px;
 }
