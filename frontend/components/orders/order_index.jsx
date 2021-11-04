@@ -129,12 +129,17 @@ class Orders extends React.Component {
   emptyOrder() {
     return (
       <div>
-        <div className='orders-container'>
-          <div className='order-left'>
+        <div className='empty-orders-container'>
+          {/* <div className='order-left'> */}
+            <img className="empty-cart-pic" src="images/icons/jar.png"/>
+            <br/>
             <div className='order-header1'>Your Order Is Empty!</div>
+            <div className="empty-order-text">
+              <p>Don't wait to bake. Add items to your cart and enjoy your weed today.</p>
+            {/* </div> */}
           </div>
 
-          <div className='order-right'>
+          {/* <div className='order-right'>
             <div className='order-summary'>
               <div className="summary">Summary</div>
             <div className='total'>
@@ -142,11 +147,12 @@ class Orders extends React.Component {
               <div className='total-price'>$0.00</div>
             </div>
             </div>
-              <div className='checkout'>
-                <button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
+              <div className='checkout'> */}
+                <button onClick={() => { this.togglePopUpEmptyCheckout() }} className='shopNowButton'>Shop Now</button>
+                {/* </div> */}
             {this.state.showPopupEmptyCheckout ?
               <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
-          </div>
+          {/* </div> */}
         </div>
         <Footer/>
       </div>

@@ -127,12 +127,15 @@ rem
 }
 
 .order-header1{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    display: flex;
-    position: relative;
-    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: circular, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.003125rem;
+    line-height: 1.75rem;
 }
 
 .add-items-container > * {
@@ -148,6 +151,49 @@ rem
     margin-top: 20%;
 }
 
+.empty-orders-container {
+    display: flex;
+    height: 58vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.empty-order-text > * {
+    color: rgb(124, 124, 124);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    max-width: 23.5rem;
+    text-align: center;
+}
+
+.shopNowButton {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1rem;
+    font-weight: 700;
+    outline: none;
+    margin: 0px;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    padding: 0.6875rem 0.9375rem;
+    --button-color: #6c6f75;
+    color: rgb(96, 100, 111);
+    border: 0.0625rem solid var(--button-color);
+    background-color: rgb(255, 255, 255);
+}
+
+.empty-cart-pic {
+    width: 100px;
+    height: auto;
+}
 /* .order-products{
     display: flex;
     flex-direction: column;
@@ -190,12 +236,6 @@ rem
     border-color: lightgray;
     border-radius: 5px;
 } */
-
-/* .order-header{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-}
 
 .order-item-name{
     font-family: 'Open Sans', sans-serif;
