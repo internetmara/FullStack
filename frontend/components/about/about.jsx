@@ -5,7 +5,7 @@ export default ({about}) => (
   <div className="about">
     <div className="about-text">Welcome to HashMaps, a clone of&nbsp;<a href="https://weedmaps.com/">Weedmaps</a>!</div>
     <div className="bio">
-      <img className="bio-pic" src="images/Mara.jpeg"/>
+      <a href="https://internetmara.github.io/"><img className="bio-pic" src="images/Mara.jpeg"/></a>
       <br/>
       <p className="bio-text">Hi, my name is Mara and I am a fullstack developer. 
       <br/>
