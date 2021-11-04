@@ -7,7 +7,7 @@ export default ({about}) => (
     <div className="bio">
       <a href="https://internetmara.github.io/"><img className="bio-pic" src="images/Mara.jpeg"/></a>
       <br/>
-      <p className="bio-text">Hi, my name is Mara and I am a fullstack developer. 
+      <p className="bio-text">Hi, my name is Mara Finkel and I am a fullstack developer. 
       <br/>
       <br/>
       I really enjoy working working with frontend frameworks such as React, and backend frameworks such as Rails. My favorite languages to code in are JavaScript and Ruby. 
