@@ -4,8 +4,6 @@ import {fetchDispensaries, fetchDispensary } from '../../actions/dispensary_acti
 import Orders from './order_index';
 import { selectProductsInOrder } from '../../reducers/selectors';
 
-  // const { id, prod_name, dispo_name, quantity, url, dispo_id, prod_id } = this.props
-
 const mapSTP = ({ session, entities: { orders, products, dispensaries } }) => ({
   userOrders: selectProductsInOrder(orders, products),
   products: products,

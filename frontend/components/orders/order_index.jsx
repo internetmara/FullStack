@@ -93,6 +93,7 @@ class Orders extends React.Component {
                 dispo_name={order.dispoName}
                 dispo_pic={order.dispoPic}
                 prod_name={order.prodName}
+                prod_price={order.prodPrice}
                 quantity={order.quantity}
                 prod_pic={order.prodPic}
                 dispo_id={order.dispoId}

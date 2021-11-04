@@ -73,6 +73,18 @@
     margin: 0.25rem;
 }
 
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    color: rgb(37, 41, 53);
+    padding-bottom: 0.5;
+    height: 250px;
+rem
+;
+}
+
 .order-left {
     position: relative;
     width: 66.6667%;
