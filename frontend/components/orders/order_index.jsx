@@ -26,7 +26,6 @@ class Orders extends React.Component {
   }
 
   togglePopUpCheckout() {
-    console.log('hello')
     this.setState({
       showPopupCheckout: !this.state.showPopupCheckout
     })
@@ -84,13 +83,12 @@ class Orders extends React.Component {
   inOrder() {
     // const currentOrders = Object.values(this.props.orders);
     const currentOrders = [this.props.orders]; //should be an array of orders
-    console.log(currentOrders)
     return (
         <div className='orders-container'>
           <div className="order-left">
-            {currentOrders.map(order =>
+            {currentOrders.map((order, id) =>
               <OrderIndexItem
-                key={order.id}
+                key={id}
                 dispo_name={order.dispoName}
                 dispo_pic={order.dispoPic}
                 prod_name={order.prodName}

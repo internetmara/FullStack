@@ -15,7 +15,7 @@ export default ({ }) => {
           &nbsp;&nbsp;&nbsp;Cannabis!
         </div>
         <div id="slide-4">
-          &nbsp;&nbsp;Vaporizers
+          &nbsp;&nbsp;Vapes
         </div>
         <div id="slide-5">
           420

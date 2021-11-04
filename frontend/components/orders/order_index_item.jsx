@@ -30,7 +30,7 @@ class OrderIndexItem extends React.Component {
           <h1 className="prod_name">{prod_name}</h1>
           <h1 className="prod_price">${prod_price}.00</h1>
           <h1 className="prod_size">{prod_size}</h1>
-          <h1 className="id">{id}</h1>
+          {/* <h1 className="id">{prod_ id}</h1> */}
           <h1 className="quantity">Quantity: {quantity}</h1>
           {/* <h1 className="dispo_id">{dispo_id}</h1> */}
           {/* <h1 className="prod_id">{prod_id}</h1> */}
