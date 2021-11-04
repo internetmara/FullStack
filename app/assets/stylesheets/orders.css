@@ -1,4 +1,4 @@
-.orders-container{
+/* .orders-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,48 +8,74 @@
   margin: auto;
   margin-top: 10%;
   margin-bottom: 40px;
+} */
+.order-left {
+    width: 66.6667%;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.order-left{
-    display: flex;
-    flex-direction: column;
-    padding-right: 30px;
-    width: 600px;
-}
-
+.delivery-header, .order-header {
+    font-family: circular, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    color: rgb(37, 41, 53);
+ }
+ 
 .order-products{
     display: flex;
     flex-direction: column;
-    /* position: absolute; */
     top: 50px;
     width: 600px;
-    /* align-items: center; */
     padding: 10px;
 }
 
-.size-order {
-    position: relative;
-    display: inline-block;
-}
-
-.quantity-select{
+/* .quantity-select{
     position: relative;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     color: rgba(130, 130, 130, 1);
-}
-
+} */
+/* 
 .order-product-price{
     position: relative;
     display: flex;
     width: 400px;
     justify-content: space-between;
     padding-bottom: 0px;
+} */
+
+.dispensary-order-box {
+    line-height: 1.5;
+    max-width: 100%;
+    min-width: 14rem;
+    padding: 0px;
+    width: 24rem;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    display: inline-block;
+    height: auto;
+    position: relative;
+    transition: box-shadow 300ms ease 0s;
+    width: 100%;
 }
 
+.dispensary-order-info {
+    display: grid;
+    row-gap: 0.125rem;
+    align-content: start;
+    justify-items: start;
+    color: rgb(96, 100, 111);
+    margin-left: 1rem;
+}
 .prod_pic, .dispo_pic{
-    width: 150px;
-    height: 150px;
+    width: 96px;
+    height: 96px;
     
 }
 
@@ -57,13 +83,14 @@
     margin: auto;
     align-items: center;
 }
-.size-order{
+
+/* .size-order{
     padding-bottom: 15px;
     padding-right: 20px;
     font-family: 'Open Sans', sans-serif;
     color: rgba(130, 130, 130, 1);
-}
-
+} */
+/* 
 .order-product-container{
     width: 100%;
     display: inline-block;
@@ -73,16 +100,16 @@
     padding-bottom: 10px;
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
-}
+} */
 
-.order-info-wrapper{
+/* .order-info-wrapper{
     position: relative;
     left: 150px;
     top: -150px;
     padding-left: 15px;
-}
+} */
 
-.select-dropdown{
+/* .select-dropdown{
     border-color: lightgray;
     border-radius: 5px;
 }
@@ -102,9 +129,9 @@
 .total{
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.order-header{
+/* .order-header{
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 30px;
@@ -118,7 +145,7 @@
 .order-item-price{
     font-family: 'Open Sans', sans-serif;
     color: rgba(130, 130, 130, 1);
-}
+} */
 
 
 .delete-button{
@@ -132,7 +159,7 @@
     padding: 0px;
 }
 
-.summary{
+/* .summary{
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -153,7 +180,7 @@
     font-weight: 600;
     padding-top: 30px;
     padding-bottom: 30px;
-}
+} */
 
 .checkoutButton {
   color: rgb(255, 255, 255);
@@ -185,12 +212,6 @@
     display: flex;
     position: relative;
     width: 100%;
-}
-
-.order-left1{
-    display: flex;
-    padding-right: 30px;
-    width: 600px;
 }
 
 
