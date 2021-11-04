@@ -19,8 +19,23 @@
     width: 100%;
     padding: 1rem;
     color: rgb(37, 41, 53);
- }
- 
+}
+
+.dispensary-order-box, .products-order-box {
+    line-height: 1.5;
+    max-width: 100%;
+    min-width: 14rem;
+    padding: 0px;
+    width: 24rem;
+    margin: 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    display: flex;
+    height: auto;
+    position: relative;
+    transition: box-shadow 300ms ease 0s;
+}
 /* .order-products{
     display: flex;
     flex-direction: column;
@@ -44,21 +59,6 @@
     padding-bottom: 0px;
 } */
 
-.dispensary-order-box, .products-order-box {
-    line-height: 1.5;
-    max-width: 100%;
-    min-width: 14rem;
-    padding: 0px;
-    width: 24rem;
-    margin: 10px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.25rem;
-    display: flex;
-    height: auto;
-    position: relative;
-    transition: box-shadow 300ms ease 0s;
-}
 
 .dispensary-order-info, .product-order-info {
     display: flex;
