@@ -79,10 +79,8 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     color: rgb(37, 41, 53);
-    padding-bottom: 0.5;
+    padding-bottom: 0.5rem;
     height: 250px;
-rem
-;
 }
 
 .order-left {
