@@ -2,7 +2,7 @@ import React from "react";
 
 class OrderIndexItem extends React.Component {
   render() {
-    const { id, prod_name, dispo_pic, dispo_name, quantity, url, dispo_id, prod_id, userOrders } = this.props
+    const { id, prod_name, dispo_pic, dispo_name, quantity, prod_pic, dispo_id, prod_id, userOrders } = this.props
     return(
       <div className="order-left">
         <h1>Your delivery order:</h1>
@@ -14,7 +14,7 @@ class OrderIndexItem extends React.Component {
           <h1 className="prod_name">{prod_name}</h1>
           {/* <h1 className="id">{id}</h1> */}
           <h1 className="quantity">Quantity: {quantity}</h1>
-          <img className="url" src={url}/>
+          <img className="prod_pic" src={prod_pic}/>
           {/* <h1 className="dispo_id">{dispo_id}</h1> */}
           {/* <h1 className="prod_id">{prod_id}</h1> */}
         </div>
