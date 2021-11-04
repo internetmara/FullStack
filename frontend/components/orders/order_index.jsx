@@ -85,31 +85,34 @@ class Orders extends React.Component {
     const currentOrders = [this.props.orders]; //should be an array of orders
     return (
         <div className='orders-container'>
-          <div className="order-product-container">
-          {currentOrders.map(order =>
-            <OrderIndexItem
-              key={order.id}
-              dispo_name={order.dispoName}
-              dispo_pic={order.dispoPic}
-              prod_name={order.prodName}
-              quantity={order.quantity}
-              prod_pic={order.prodPic}
-              dispo_id={order.dispoId}
-              prod_id={order.prodId}
-              />
-              )}
-              </div>
+          <div className="order-left">
+            {currentOrders.map(order =>
+              <OrderIndexItem
+                key={order.id}
+                dispo_name={order.dispoName}
+                dispo_pic={order.dispoPic}
+                prod_name={order.prodName}
+                quantity={order.quantity}
+                prod_pic={order.prodPic}
+                dispo_id={order.dispoId}
+                prod_id={order.prodId}
+              />)}
+            </div>
+
           <div className='order-right'>
             <div className='summary'>Summary</div>
+
             <div className='total'>
               <div className='total-header'>Total</div>
               {/* <div className='total-price'>${this.sumOrderTotal()}.00</div> */}
             </div>
+
+            <div className='checkout'>
+              <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button>
+            </div>
+
           </div>
 
-          <div className='checkout'>
-            <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button>
-          </div>
 
           {this.state.showPopupCheckout ?
             <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}

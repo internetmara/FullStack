@@ -4,7 +4,7 @@ class OrderIndexItem extends React.Component {
   render() {
     const { id, prod_name, dispo_pic, dispo_name, quantity, prod_pic, dispo_id, prod_id, userOrders } = this.props
     return(
-      <div className="order-left">
+      <div className="order-product-container">
         <h1 className="delivery-header">Your delivery order:</h1>
         <div className="dispensary-order-box">
           <img className="dispo_pic" src={dispo_pic}/>

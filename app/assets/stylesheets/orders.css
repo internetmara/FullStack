@@ -1,18 +1,13 @@
-/* .orders-container{
+.orders-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   width: 90%;
   top: 10px;
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: auto;
   margin-top: 10%;
   margin-bottom: 40px;
-} */
-.order-left {
-    width: 66.6667%;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .delivery-header, .order-header {
@@ -63,7 +58,6 @@
     height: auto;
     position: relative;
     transition: box-shadow 300ms ease 0s;
-    width: 100%;
 }
 
 .dispensary-order-info, .product-order-info {
@@ -83,6 +77,25 @@
     
 }
 
+.order-right{
+    padding: 1rem;
+    position: relative;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
+    overflow: hidden;
+    width: 33.3333%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.order-left {
+    position: relative;
+    width: 66.6667%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .popup-close > * {
     margin: auto;
     align-items: center;
@@ -94,17 +107,7 @@
     font-family: 'Open Sans', sans-serif;
     color: rgba(130, 130, 130, 1);
 } */
-/* 
-.order-product-container{
-    width: 100%;
-    display: inline-block;
-    position: relative;
-    height: 200px;
-    padding-top: 60px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-} */
+ 
 
 /* .order-info-wrapper{
     position: relative;
@@ -112,27 +115,10 @@
     top: -150px;
     padding-left: 15px;
 } */
-
-/* .select-dropdown{
+/* 
+.select-dropdown{
     border-color: lightgray;
     border-radius: 5px;
-}
-
-.order-right{
-    width: 300px;
-}
-
-.total-header{
-    display:inline-block;
-}
-
-.total-price{
-    display:inline-block;
-}
-
-.total{
-    display: flex;
-    justify-content: space-between;
 } */
 
 /* .order-header{
@@ -163,12 +149,12 @@
     padding: 0px;
 }
 
-.summary{
+/* .summary{
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 15px;
-}
+} */
 
 /* .subtotal{
     font-family: 'Open Sans', sans-serif;
@@ -177,14 +163,14 @@
     padding-bottom: 15px;
 } */
 
-.total{
+/* .total{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: 600;
     padding-top: 30px;
     padding-bottom: 30px;
-}
+} */
 
 .checkoutButton {
   color: rgb(255, 255, 255);
