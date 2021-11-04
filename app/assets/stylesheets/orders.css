@@ -36,29 +36,6 @@
     position: relative;
     transition: box-shadow 300ms ease 0s;
 }
-/* .order-products{
-    display: flex;
-    flex-direction: column;
-    top: 50px;
-    width: 600px;
-    padding: 10px;
-} */
-
-/* .quantity-select{
-    position: relative;
-    display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(130, 130, 130, 1);
-} */
-/* 
-.order-product-price{
-    position: relative;
-    display: flex;
-    width: 400px;
-    justify-content: space-between;
-    padding-bottom: 0px;
-} */
-
 
 .dispensary-order-info, .product-order-info {
     display: flex;
@@ -100,6 +77,30 @@
     margin: auto;
     align-items: center;
 }
+
+
+/* .order-products{
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    width: 600px;
+    padding: 10px;
+} */
+
+/* .quantity-select{
+    position: relative;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(130, 130, 130, 1);
+} */
+/* 
+.order-product-price{
+    position: relative;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding-bottom: 0px;
+} */
 
 /* .size-order{
     padding-bottom: 15px;
