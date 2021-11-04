@@ -21,15 +21,22 @@ class OrderIndexItem extends React.Component {
             </div>
           </div>
         </div>
+        
         <h1 className="order-header">Your items:</h1>
-        <div className="order-products">
+        
+        <div className="products-order-box">
+          <img className="prod_pic" src={prod_pic}/>
+          
+          <div className="product-order-info">
           <h1 className="prod_name">{prod_name}</h1>
           {/* <h1 className="id">{id}</h1> */}
           <h1 className="quantity">Quantity: {quantity}</h1>
-          <img className="prod_pic" src={prod_pic}/>
           {/* <h1 className="dispo_id">{dispo_id}</h1> */}
           {/* <h1 className="prod_id">{prod_id}</h1> */}
+          </div>
+
         </div>
+
       </div>
     )
   }
