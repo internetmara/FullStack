@@ -18,7 +18,7 @@ class Orders extends React.Component {
     this.emptyOrder = this.emptyOrder.bind(this);
     this.handleChange = this.handleChange.bind(this);
     // this.sumOrderTotal = this.sumOrderTotal.bind(this);
-    // this.sumTotal = this.sumTotal.bind(this);
+    this.sumTotal = this.sumTotal.bind(this);
     this.togglePopUpCheckout = this.togglePopUpCheckout.bind(this);
     this.togglePopUpEmptyCheckout = this.togglePopUpEmptyCheckout.bind(this);
 
@@ -53,20 +53,20 @@ class Orders extends React.Component {
   //   let total = 0;
 
   //   let totalProductsPrice = orderQuantity.map(Id => {
-  //     let productId = this.props.orders[Id].product_id; //products object product id
-  //     total = total + this.props.products[productId].price * this.props.orders[Id].quantity;
+  //     // let productId = this.props.orders[Id].product_id; //products object product id
+  //     total = total + this.props.orders.prodPrice * this.props.orders.quantity;
   //     return total;
   //   })
-// 
+
   //   return total;
   // }
 
-  // sumTotal(Id, productId) {
-  //   let total = 0;
-  //   total = total + this.props.products[productId].price * this.props.orders[Id].quantity;
-  //   return total;
+  sumTotal() {
+    let total = 0;
+    total = total + this.props.orders.prodPrice * this.props.orders.quantity;
+    return total;
 
-  // }
+  }
 
   clearOrder() {
     let orderQuantity = Object.keys(this.props.orders);
@@ -93,6 +93,7 @@ class Orders extends React.Component {
                 dispo_name={order.dispoName}
                 dispo_pic={order.dispoPic}
                 prod_name={order.prodName}
+                prod_size={order.prodSize}
                 prod_price={order.prodPrice}
                 quantity={order.quantity}
                 prod_pic={order.prodPic}
@@ -104,10 +105,9 @@ class Orders extends React.Component {
           <div className='order-right'>
             <div className="order-summary">
             <div className='summary'>Summary</div>
-
             <div className='total'>
               <div className='total-header'>Order Total</div>
-              {/* <div className='total-price'>${this.sumOrderTotal()}.00</div> */}
+              <div className='total-price'>${this.sumTotal()}.00</div>
             </div>
             </div>
           <div className='checkout'>

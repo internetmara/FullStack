@@ -14,6 +14,7 @@ before_action :require_logged_in, only: [:create]
         @order[:id] = order.id
         @order[:dispo_name] = order.dispensary.name
         @order[:prod_name] = order.product.name
+        @order[:prod_size] = order.product.size
         @order[:prod_price] = order.product.price
         @order[:dispo_pic] = order.dispensary.url
         @order[:quantity] = order.quantity
@@ -31,7 +32,7 @@ before_action :require_logged_in, only: [:create]
       @order = {}
       @order[:id] = order_selected.id
       @order[:prod_name] = order_selected.product.name
-      @order[:prod_name] = order_selected.product.name
+      @order[:prod_size] = order_selected.product.size
       @order[:prod_price] = order_selected.product.price
       @order[:dispo_name] = order_selected.dispensary.name
       @order[:dispo_pic] = order_selected.dispensary.url
@@ -51,6 +52,7 @@ before_action :require_logged_in, only: [:create]
       @order[:id] = new_order.id
       @order[:prod_name] = new_order.product.name
       @order[:prod_price] = new_order.product.price
+      @order[:prod_size] = new_order.product.size
       @order[:dispo_name] = new_order.dispensary.name
       @order[:dispo_pic] = new_order.dispensary.url
       @order[:quantity] = new_order.quantity
