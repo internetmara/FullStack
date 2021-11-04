@@ -78,6 +78,16 @@
     align-items: center;
 }
 
+.delete-button{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(130, 130, 130, 1);
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0px;
+}
 
 /* .order-products{
     display: flex;
@@ -137,18 +147,6 @@
     font-family: 'Open Sans', sans-serif;
     color: rgba(130, 130, 130, 1);
 } */
-
-
-.delete-button{
-    border: none;
-    background-color: white;
-    text-decoration: underline;
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(130, 130, 130, 1);
-    cursor: pointer;
-    font-size: 15px;
-    padding: 0px;
-}
 
 /* .summary{
     font-family: 'Open Sans', sans-serif;
