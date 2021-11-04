@@ -102,5 +102,17 @@
 }
 
 .popup-close {
-  margin: 5px;
+  display: flex;
+  position: fixed;
+  height: 25px;
+  justify-content: left;
+  align-items: center;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 10px;
+  background-color:#00a8a3;
+  color: antiquewhite;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid;
 }

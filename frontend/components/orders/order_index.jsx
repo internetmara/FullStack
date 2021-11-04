@@ -26,6 +26,7 @@ class Orders extends React.Component {
   }
 
   togglePopUpCheckout() {
+    console.log('hello')
     this.setState({
       showPopupCheckout: !this.state.showPopupCheckout
     })
