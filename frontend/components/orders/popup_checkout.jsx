@@ -6,16 +6,17 @@ class PopupCheckout extends React.Component {
     return (
       <div className='popup'>
         <div className='popup-inner'>
-          <div className='popup-inner-2'>
             <button className='popup-close' onClick={() => { this.props.closePopup() }}>x</button>
-            <div className='popup-header-checkout'>HashMaps is an app clone that unfortunately does not sell actual weed. Maybe one day, but until then feel free to keep browsing!</div>
-            <div className='popup-gif'><iframe src="https://giphy.com/embed/d3mm7z65NYqd9gwU" width="250" height="250" frameBorder="0" className="giphy-embed" allowFullScreen></iframe></div>
-            <div className='continue-shopping'>
-              <button className='popup-button'><Link to='/products'>Continue Shopping</Link></button>
+            <div className="popup-inner2">
+              <div className='popup-header-checkout'>HashMaps is an app clone that unfortunately does not sell actual weed. Maybe one day, but until then feel free to keep browsing!</div>
+              <div className='continue-shopping'>
+                <div className='popup-gif'><iframe src="https://giphy.com/embed/d3mm7z65NYqd9gwU" width="250" height="250" frameBorder="0" className="giphy-embed" allowFullScreen></iframe></div>
+                <br/>
+                <button className='popup-button'><Link to='/products'>Continue Shopping</Link></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -84,6 +84,7 @@ class Orders extends React.Component {
   inOrder() {
     // const currentOrders = Object.values(this.props.orders);
     const currentOrders = [this.props.orders]; //should be an array of orders
+    console.log(currentOrders)
     return (
         <div className='orders-container'>
           <div className="order-left">
@@ -129,20 +130,20 @@ class Orders extends React.Component {
     return (
       <div>
         <div className='orders-container'>
-          <div className='order-left1'>
-            <div className='order-header1'>Your Order Is Empty</div>
+          <div className='order-left'>
+            <div className='order-header1'>Your Order Is Empty!</div>
           </div>
 
           <div className='order-right'>
-            <div className='summary'>Summary</div>
-
+            <div className='order-summary'>
+              <div className="summary">Summary</div>
             <div className='total'>
               <div className='total-header'>Total</div>
               <div className='total-price'>$0.00</div>
             </div>
-            <div className="order-buttons">
-              <div className='checkout'><button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
             </div>
+              <div className='checkout'>
+                <button onClick={() => { this.togglePopUpEmptyCheckout() }} className='checkoutButton'>Checkout</button></div>
             {this.state.showPopupEmptyCheckout ?
               <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
           </div>

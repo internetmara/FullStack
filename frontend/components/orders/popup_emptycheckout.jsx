@@ -5,10 +5,15 @@ class PopupCheckout extends React.Component {
   render() {
     return (
       <div className='popup'>
-        <div className='popup_inner'>
-          <div className='add-items-container'>
-            <div className='popup-header'>Add Items to Order!</div>
-            <div className='popup-close'><button className='popup-button' onClick={this.props.closePopup}><Link to='/dispensaries' className='continue-shopping'>Continue Shopping</Link></button></div>
+        <div className='popup-inner'>
+          <button className='popup-close' onClick={() => { this.props.closePopup() }}>x</button>
+          <div className="popup-inner2">
+            <div className='popup-header-additems'>HashMaps is an app clone that unfortunately does not sell actual weed. Maybe one day, but until then feel free to log in and add some items!</div>
+            <div className='continue-shopping'>
+              <div className='popup-gif'><iframe src="https://giphy.com/embed/d3mm7z65NYqd9gwU" width="250" height="250" frameBorder="0" className="giphy-embed" allowFullScreen></iframe></div>
+              <br/>
+              <button className='popup-button'><Link to='/login'>Log in</Link></button>
+            </div>
           </div>
         </div>
       </div>
