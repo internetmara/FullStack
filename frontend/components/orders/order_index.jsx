@@ -84,6 +84,7 @@ class Orders extends React.Component {
     // const currentOrders = Object.values(this.props.orders);
     const currentOrders = [this.props.orders]; //should be an array of orders
     return (
+      <div>
         <div className='orders-container'>
           <div className="order-left">
             {currentOrders.map((order, id) =>
@@ -120,6 +121,8 @@ class Orders extends React.Component {
             <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}
 
         {/* <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button> */}
+        </div>
+        <Footer/>
       </div>
     )
   }
