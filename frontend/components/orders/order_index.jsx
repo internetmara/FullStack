@@ -101,18 +101,19 @@ class Orders extends React.Component {
             </div>
 
           <div className='order-right'>
+            <div className="order-summary">
             <div className='summary'>Summary</div>
 
             <div className='total'>
-              <div className='total-header'>Total</div>
+              <div className='total-header'>Order Total</div>
               {/* <div className='total-price'>${this.sumOrderTotal()}.00</div> */}
             </div>
-
-            <div className='checkout'>
-              <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button>
             </div>
-
+          <div className='checkout'>
+            <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button>
           </div>
+          </div>
+
 
 
           {this.state.showPopupCheckout ?

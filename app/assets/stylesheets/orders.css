@@ -15,9 +15,9 @@
     margin: 0px;
     font-size: 1.25rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     color: rgb(37, 41, 53);
 }
 
@@ -26,7 +26,6 @@
     max-width: 100%;
     min-width: 14rem;
     padding: 0px;
-    width: 24rem;
     margin: 10px;
     box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
     background-color: rgb(255, 255, 255);
@@ -55,15 +54,23 @@
 }
 
 .order-right{
+    display: flex;
+    flex-direction: column;
+    width: 33.3333%;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 14rem;
+    padding: 1rem;
+}
+
+.order-summary, .checkout{
     padding: 1rem;
     position: relative;
     border-radius: 3px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
     overflow: hidden;
-    width: 33.3333%;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 0.25rem;
 }
 
 .order-left {

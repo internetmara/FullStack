@@ -21,9 +21,8 @@ class OrderIndexItem extends React.Component {
             </div>
           </div>
         </div>
-        
         <h1 className="order-header">Your items:</h1>
-        
+  
         <div className="products-order-box">
           <img className="prod_pic" src={prod_pic}/>
           
