@@ -110,7 +110,7 @@ class Orders extends React.Component {
             </div>
             </div>
           <div className='checkout'>
-            <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Checkout</button>
+            <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Proceed to checkout</button>
           </div>
           </div>
 
