@@ -43,7 +43,7 @@ export const createOrder = order => dispatch => (
 
 export const deleteOrder = orderId => dispatch => (
   OrderAPIUTIL.deleteOrder(orderId)
-    .then(order => dispatch(removeOrdertem(order)))
+    .then(order => dispatch(removeOrder(order)))
 )
 
 export const updateOrder = orderId => dispatch => {
