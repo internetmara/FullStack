@@ -17,11 +17,12 @@ class Orders extends React.Component {
     this.inOrder = this.inOrder.bind(this);
     this.emptyOrder = this.emptyOrder.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    // this.sumOrderTotal = this.sumOrderTotal.bind(this);
     this.sumTotal = this.sumTotal.bind(this);
     this.togglePopUpCheckout = this.togglePopUpCheckout.bind(this);
     this.togglePopUpEmptyCheckout = this.togglePopUpEmptyCheckout.bind(this);
-    // this.sumOrderTotal = this.sumOrderTotal.bind(this);
-    // this.clearOrder = this.clearOrder.bind(this);
+
+    this.clearOrder = this.clearOrder.bind(this);
   }
 
   togglePopUpCheckout() {
@@ -66,13 +67,12 @@ class Orders extends React.Component {
 
   }
 
-  // clearOrder() {
-  //   console.log(this.props.orders)
-  //   let orderQuantity = Object.keys(this.props.orders);
-  //   orderQuantity.map(id => {
-  //     this.props.deleteOrder(orderId);
-  //   })
-  // }
+  clearOrder() {
+    let orderQuantity = Object.keys(this.props.orders);
+    orderQuantity.map(Id => {
+      this.props.deleteOrder(Id);
+    })
+  }
 
   handleChange(idx) {
     event.preventDefault();
@@ -109,7 +109,6 @@ class Orders extends React.Component {
               <div className='total-header'>Order Total</div>
               <div className='total-price'>${this.sumTotal()}.00</div>
             </div>
-          {/* <button className='delete-button' onClick={() => { this.clearOrder(); }}>Remove</button> */}
             </div>
           <div className='checkout'>
             <button onClick={() => { this.togglePopUpCheckout(); }} className='checkoutButton'>Proceed to checkout</button>
@@ -121,9 +120,10 @@ class Orders extends React.Component {
           {this.state.showPopupCheckout ?
             <PopupCheckout closePopup={this.togglePopUpCheckout} clearOrder={this.clearOrder} /> : null}
 
-        </div>
-        <Footer/>
+        {/* <button className='delete-button' onClick={() => { this.props.deleteOrder(Id); }}>Remove</button> */}
       </div>
+        <Footer/>
+        </div>
     )
   }
 
@@ -131,24 +131,31 @@ class Orders extends React.Component {
     return (
       <div>
         <div className='empty-orders-container'>
+          {/* <div className='order-left'> */}
             <img className="empty-cart-pic" src="images/icons/jar.png"/>
-           
             <br/>
-           
             <div className='order-header1'>Your Order Is Empty!</div>
-           
             <div className="empty-order-text">
               <p>Don't wait to bake. Add items to your cart and enjoy your weed today.</p>
+            {/* </div> */}
+          </div>
+
+          {/* <div className='order-right'>
+            <div className='order-summary'>
+              <div className="summary">Summary</div>
+            <div className='total'>
+              <div className='total-header'>Total</div>
+              <div className='total-price'>$0.00</div>
             </div>
-            
-            <button onClick={() => { this.togglePopUpEmptyCheckout() }} className='shopNowButton'>Shop Now</button>
-            
+            </div>
+              <div className='checkout'> */}
+                <button onClick={() => { this.togglePopUpEmptyCheckout() }} className='shopNowButton'>Shop Now</button>
+                {/* </div> */}
             {this.state.showPopupEmptyCheckout ?
               <PopupEmptyCheckout closePopup={this.togglePopUpEmptyCheckout} /> : null}
+          {/* </div> */}
         </div>
-        
         <Footer/>
-      
       </div>
     )
   }

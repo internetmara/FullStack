@@ -17,7 +17,7 @@ const Greeting = ({ currentUser, logout }) => {
         <i className="fa fa-shopping-cart" id="cart" />
       </Link>
       <h2 className="header-name"><img src="/images/icons/user.png"/></h2>
-      <button className="logout-header-button" onClick={logout}>Log Out</button>
+      <Link to="/"><button className="logout-header-button" onClick={logout}>Log Out</button></Link>
     </hgroup>
   );
 

@@ -3,7 +3,7 @@ import Footer from '../footer/footer';
 
 export default ({about}) => (
   <div className="about">
-    <div className="about-text">Welcome to HashMaps, a clone of&nbsp;<a href="https://weedmaps.com/">Weedmaps</a>!</div>
+    <div className="about-text">Welcome to HashMaps, a clone of&nbsp;<a href="https://weedmaps.com/" target="_blank">Weedmaps</a>!</div>
     <div className="bio">
       <a href="https://internetmara.github.io/"><img className="bio-pic" src="images/Mara.jpeg"/></a>
       <br/>
