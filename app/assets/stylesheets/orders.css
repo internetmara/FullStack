@@ -4,7 +4,6 @@
   justify-content: center;
   width: 90%;
   top: 10px;
-  /* max-width: 700px; */
   margin: auto;
   margin-top: 10%;
   margin-bottom: 40px;
@@ -112,7 +111,6 @@
     border-radius: 0.1875rem;
     border: 0.0625rem solid rgb(204, 204, 204);
     padding: 0px 1rem;
-    /* color: rgb(74, 74, 74); */
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -256,7 +254,7 @@
 .order-item-price{
     font-family: 'Open Sans', sans-serif;
     color: rgba(130, 130, 130, 1);
-} */
+}
 
 /* .summary{
     font-family: 'Open Sans', sans-serif;
