@@ -12,17 +12,19 @@
 
 .order-left{
     display: flex;
+    flex-direction: column;
     padding-right: 30px;
     width: 600px;
 }
 
 .order-products{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* position: absolute; */
     top: 50px;
     width: 600px;
-    align-items: center;
+    /* align-items: center; */
+    padding: 10px;
 }
 
 .size-order {
@@ -46,8 +48,9 @@
 }
 
 .url{
-    /* width: 150px; */
+    width: 150px;
     height: 150px;
+    
 }
 
 .popup-close > * {
