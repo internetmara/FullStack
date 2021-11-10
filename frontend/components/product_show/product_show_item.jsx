@@ -20,10 +20,11 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
       let productIdArray = [];
       let item = {
         user_id: currentUserId,
-        product_id: userOrders.prodId,
-        quantity: userOrders.quantity,
-        dispensary_id: userOrders.dispoId
+        dispensary_id: dispensary.id,
+        product_id: product.id,
+        quantity: 1
       }
+      // console.log(item)
       // let productIdArray = userOrders.map(item => (
       //   item.product_id
       // ))
@@ -87,7 +88,7 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
             </div>
 
             <div className="button-box">
-              <button className="add-to-cart" onClick={addToCart}>Add to cart</button>
+              <button className="add-to-cart" onClick={addToCart} value={product, dispensary}>Add to cart</button>
             </div>
           </div>
         </div>

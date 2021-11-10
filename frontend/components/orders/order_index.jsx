@@ -11,7 +11,8 @@ class Orders extends React.Component {
 
     this.state = {
       showPopupCheckout: false,
-      showPopupEmptyCheckout: false
+      showPopupEmptyCheckout: false,
+      // previousOrders: []
     }
 
     this.inOrder = this.inOrder.bind(this);
@@ -62,9 +63,12 @@ class Orders extends React.Component {
 
   sumTotal() {
     let total = 0;
-    total = total + this.props.orders.prodPrice * this.props.orders.quantity;
-    return total;
-
+    if (!this.props.orders.prodPrice || this.props.order.quantity ) {
+      return total
+    } else {
+      total = total + this.props.orders.prodPrice * this.props.orders.quantity;
+      return total;
+    }
   }
 
   clearOrder() {
@@ -161,7 +165,7 @@ class Orders extends React.Component {
   }
 
   render() {
-    return (this.props.orders.length === 0 || this.props.currentUserId === null) ? this.emptyOrder() : this.inOrder();
+    return (this.props.orders.length === 0 || this.props.currentUserId === null || !this.props.orders.prodPrice ) ? this.emptyOrder() : this.inOrder();
   }
 }
 

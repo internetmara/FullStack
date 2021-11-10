@@ -6,9 +6,6 @@ import Footer from './../footer/footer'
 class ProductShow extends React.Component {
   constructor(props) {
     super(props);
-
-    // this.addToCart = this.addToCart.bind(this);
-    // this.addItem = this.addItem.bind(this);
   }
 
   
