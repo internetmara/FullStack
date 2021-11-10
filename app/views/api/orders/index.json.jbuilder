@@ -1,10 +1,12 @@
-json.orders do 
-    @orders.each do |order|
-        # json.set! order.id do 
-            json.extract! order, :dispo_id, :prod_id, :quantity, :id, :prod_pic, :dispo_pic, :dispo_name, :prod_name, :prod_size, :prod_price
-        # end
-    end
-end
+# json.orders do 
+#     @orders.each do |order|
+#         json.set! order.id do 
+#             json.extract! order, :dispo_id, :prod_id, :quantity, :id, :prod_pic, :dispo_pic, :dispo_name, :prod_name, :prod_size, :prod_price
+#         end
+#     end
+# end
+
+json.array! @orders
 
 
 # json.products do 

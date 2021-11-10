@@ -26,6 +26,10 @@ class Orders extends React.Component {
     this.clearOrder = this.clearOrder.bind(this);
   }
 
+    componentDidMount() {
+    this.props.fetchOrders();
+  }
+  
   togglePopUpCheckout() {
     this.setState({
       showPopupCheckout: !this.state.showPopupCheckout
@@ -36,10 +40,6 @@ class Orders extends React.Component {
     this.setState({
       showPopupEmptyCheckout: !this.state.showPopupEmptyCheckout
     })
-  }
-
-  componentDidMount() {
-    this.props.fetchOrders();
   }
 
   componentDidUpdate(prevProps) {
@@ -63,10 +63,11 @@ class Orders extends React.Component {
 
   sumTotal() {
     let total = 0;
-    if (!this.props.orders.prodPrice || this.props.order.quantity ) {
+    console.log(this.props)
+    if (!this.props.orders[0].prod_price || !this.props.orders[0].quantity ) {
       return total
     } else {
-      total = total + this.props.orders.prodPrice * this.props.orders.quantity;
+      total = total + this.props.orders[0].prod_price * this.props.orders[0].quantity;
       return total;
     }
   }
@@ -85,24 +86,41 @@ class Orders extends React.Component {
   }
 
   inOrder() {
-    // const currentOrders = Object.values(this.props.orders);
-    const currentOrders = [this.props.orders]; //should be an array of orders
+    const currentOrders = Object.values(this.props.orders);
+    // const currentOrders = [this.props.orders]; //should be an array of orders
     return (
       <div>
         <div className='orders-container'>
           <div className="order-left">
+            <h1 className="delivery-header">Dispensary:</h1>
+              <div className="dispensary-order-box">
+                <img className="dispo_pic" src={currentOrders[0].dispo_pic}/>
+                <div className="dispensary-order-info">
+                  <h1 className="dispo_name">{currentOrders[0].dispo_name}</h1>
+                  <div className="dispensary-sub-heading">
+                    <div className="stars">
+                      <img className="stars" src="/images/icons/star.png" />
+                      <img className="stars" src="/images/icons/star.png" />
+                      <img className="stars" src="/images/icons/star.png" />
+                      <img className="stars" src="/images/icons/star.png" />
+                      <img className="stars" src="/images/icons/star.png" />&nbsp;5.0 (420)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <h1 className="order-header">Your items:</h1> 
             {currentOrders.map((order, id) =>
               <OrderIndexItem
                 key={id}
-                dispo_name={order.dispoName}
-                dispo_pic={order.dispoPic}
-                prod_name={order.prodName}
-                prod_size={order.prodSize}
-                prod_price={order.prodPrice}
+                dispo_name={order.dispo_name}
+                dispo_pic={order.dispo_pic}
+                prod_name={order.prod_name}
+                prod_size={order.prod_size}
+                prod_price={order.prod_price}
                 quantity={order.quantity}
-                prod_pic={order.prodPic}
-                dispo_id={order.dispoId}
-                prod_id={order.prodId}
+                prod_pic={order.prod_pic}
+                dispo_id={order.dispo_id}
+                prod_id={order.prod_id}
               />)}
             </div>
 
@@ -110,7 +128,7 @@ class Orders extends React.Component {
             <div className="order-summary">
             <div className='summary'>Summary</div>
             <div className='total'>
-              <div className='total-header'>Order Total</div>
+              <div className='total-header'>Order Total:</div>
               <div className='total-price'>${this.sumTotal()}.00</div>
             </div>
             </div>
@@ -165,7 +183,7 @@ class Orders extends React.Component {
   }
 
   render() {
-    return (this.props.orders.length === 0 || this.props.currentUserId === null || !this.props.orders.prodPrice ) ? this.emptyOrder() : this.inOrder();
+    return (Object.values(this.props.orders).length === 0 || this.props.currentUserId === null ) ? this.emptyOrder() : this.inOrder();
   }
 }
 

@@ -9,7 +9,7 @@ class OrderIndexItem extends React.Component {
     const { prod_name, prod_price, prod_size, dispo_pic, dispo_name, quantity, prod_pic, dispo_id, prod_id } = this.props;
     return (
       <div className="order-product-container">
-        <h1 className="delivery-header">Your delivery order:</h1>
+        {/* <h1 className="delivery-header">Dispensary:</h1>
         <div className="dispensary-order-box">
           <img className="dispo_pic" src={dispo_pic}/>
           <div className="dispensary-order-info">
@@ -24,8 +24,8 @@ class OrderIndexItem extends React.Component {
               </div>
             </div>
           </div>
-        </div>
-        <h1 className="order-header">Your items:</h1> 
+        </div> */}
+        {/* <h1 className="order-header">Your items:</h1>  */}
         <div className="products-order-box">
           <img className="prod_pic" src={prod_pic}/>
           

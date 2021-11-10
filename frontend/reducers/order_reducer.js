@@ -6,7 +6,7 @@ const orderReducer = (state={}, action) => {
 
     switch (action.type) {
         case RECEIVE_ORDERS:
-            return Object.assign({}, state, action.payload.orders);
+            return Object.assign({}, state, action.payload);
         case RECEIVE_ORDER:
             return Object.assign({}, state, {[action.order.id]:action.order})
         case DELETE_ORDER:

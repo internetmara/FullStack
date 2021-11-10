@@ -13,7 +13,7 @@ const Greeting = ({ currentUser, logout }) => {
   );
   const personalGreeting = () => (
     <hgroup className="header-group">
-      <Link to={`orders/`}>
+      <Link to={'/orders'}>
         <i className="fa fa-shopping-cart" id="cart" />
       </Link>
       <h2 className="header-name"><img src="/images/icons/user.png"/></h2>

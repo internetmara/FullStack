@@ -78,8 +78,8 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     color: rgb(37, 41, 53);
-    padding-bottom: 0.5rem;
-    height: 250px;
+    padding-bottom: 0.8rem;
+    height: 100px;
 }
 
 .order-left {
@@ -256,12 +256,13 @@
     color: rgba(130, 130, 130, 1);
 }
 
-/* .summary{
+.summary{
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
     font-weight: 500;
     padding-bottom: 15px;
-} */
+}
 
 /* .subtotal{
     font-family: 'Open Sans', sans-serif;

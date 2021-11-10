@@ -11,25 +11,26 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
       quantity: newItem.quantity,
       dispensary_id: newItem.dispensary_id
     })
-    history.push('/orders');
-  }
+    .then(res => history.push('/orders')
+    )}
 
   const addToCart = (e) => {
     e.preventDefault();
     if (currentUserId) {
-      let productIdArray = [];
+      // let productIdArray = [];
       let item = {
         user_id: currentUserId,
         dispensary_id: dispensary.id,
         product_id: product.id,
         quantity: 1
       }
-      // console.log(item)
       // let productIdArray = userOrders.map(item => (
       //   item.product_id
       // ))
-      if (!productIdArray.includes(item.product_id)) {
-        productIdArray.push(item.product_id)
+      let productIdArray = true;
+      if (productIdArray) {
+      // if (!productIdArray.includes(item.product_id)) {
+      //   productIdArray.push(item.product_id)
         addItem(item);
       } else {
         return (
