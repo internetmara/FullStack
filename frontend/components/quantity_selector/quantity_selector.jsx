@@ -2,19 +2,7 @@ import React from 'react';
 class QuantitySelector extends React.Component {
   constructor(props) {
     super(props);
-
-    // this.state = { value: 1 }
-    // this.increment = this.increment.bind(this);
-    // this.decrement = this.decrement.bind(this);
   }
-
-  // increment() {
-  //   this.setState({value: this.state.value+1});
-  // }
-
-  // decrement() {
-  //   this.setState({ value: this.state.value > 0 ? this.state.value-1 : 0 });
-  // }
 
   render() {
 
