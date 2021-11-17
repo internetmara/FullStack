@@ -64,10 +64,11 @@ class Orders extends React.Component {
   sumTotal() {
     let total = 0;
     console.log(this.props)
-    if (!this.props.orders[0].prod_price || !this.props.orders[0].quantity ) {
+    debugger
+    if (!this.props.orders[0].prodPrice || !this.props.orders[0].quantity ) {
       return total
     } else {
-      total = total + this.props.orders[0].prod_price * this.props.orders[0].quantity;
+      total = total + this.props.orders[0].prodPrice * this.props.orders[0].quantity;
       return total;
     }
   }

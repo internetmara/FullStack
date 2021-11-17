@@ -7,7 +7,7 @@ import { selectProductsInOrder } from '../../reducers/selectors';
 const mapSTP = ({ session, entities: { orders, products, dispensaries } }) => ({
   userOrders: selectProductsInOrder(orders, products),
   products: products,
-  orders: orders,
+  orders: Object.values(orders),
   dispensaryies: dispensaries,
   currentUserId: session.id
 })
