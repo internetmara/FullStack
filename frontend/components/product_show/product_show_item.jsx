@@ -1,9 +1,18 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import { Link } from 'react-router-dom';
 import QuantitySelector from '../quantity_selector/quantity_selector';
 
-
 export default ({ product, dispensary, currentUserId, userOrders, history, createOrder }) => {
+
+  const [quantity, setQuantity] = useState(1)
+  function increment() {
+    setQuantity(quantity + 1)
+  }
+
+  function decrement() {
+    setQuantity(quantity > 1 ? quantity - 1 : 1)
+  }
+
   const addItem = (newItem) => {
     createOrder({
       user_id: currentUserId,
@@ -22,7 +31,7 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
         user_id: currentUserId,
         dispensary_id: dispensary.id,
         product_id: product.id,
-        quantity: 1
+        quantity: quantity
       }
       // let productIdArray = userOrders.map(item => (
       //   item.product_id
@@ -85,7 +94,7 @@ export default ({ product, dispensary, currentUserId, userOrders, history, creat
 
             <div className="quantity">Quantity</div>
             <div className="quantity-selector">
-              <QuantitySelector/>
+              <QuantitySelector increment={increment} decrement={decrement} quantity={quantity}/>
             </div>
 
             <div className="button-box">
