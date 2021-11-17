@@ -63,8 +63,6 @@ class Orders extends React.Component {
 
   sumTotal() {
     let total = 0;
-    console.log(this.props)
-    debugger
     if (!this.props.orders[0].prodPrice || !this.props.orders[0].quantity ) {
       return total
     } else {
