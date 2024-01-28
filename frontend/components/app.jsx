@@ -1,9 +1,9 @@
 import React from "react";
+import {Switch, Route} from 'react-router';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import home from "./home/home";
-import { Link, Route, Switch } from "react-router-dom";
 import DispensaryShowContainer from "./dispensary_show/dispensary_show_container";
 import ProductShowContainer from "./product_show/product_show_container"
 // import TopBarContainer from "./top-bar/top-bar_container";
